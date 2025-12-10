@@ -1,42 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Login — Assistio</title>
-  <link href="styles.css" rel="stylesheet">
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <script src="scripts.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Assistio – Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="brand"><div class="logo"><img src="logo.png" onerror="this.style.display='none'"></div><div class="title"><div class="name">Assistio</div><div class="tag">Login</div></div></div>
-      <nav class="nav"><a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></nav>
-    </header>
+<header class="site-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">Assistio</a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn btn-primary header-cta">Book a demo</a>
+    </div>
+</header>
 
-    <main>
-      <section class="card" style="max-width:540px;margin:0 auto">
-        <h2>Sign in</h2>
-        <p class="small">Use Google to sign in quickly.</p>
-        <div id="g_id_onload"
-          data-client_id="228097349106-jqpraifffll36j65g0cnv02ffh8jaofc.apps.googleusercontent.com"
-          data-login_uri=""
-          data-auto_prompt="false">
+<main class="auth-page">
+    <div class="container">
+        <div class="auth-card">
+            <h1>Log in to Assistio</h1>
+            <p>Access your Assistio dashboard and manage your clients and conversations.</p>
+
+            <form class="form" action="#" method="post" onsubmit="handleLogin(event)">
+                <div class="form-row">
+                    <label for="login-email">Work email</label>
+                    <input id="login-email" name="email" type="email" required placeholder="you@company.com">
+                </div>
+
+                <div class="form-row">
+                    <label for="login-password">Password</label>
+                    <input id="login-password" name="password" type="password" required placeholder="••••••••">
+                </div>
+
+                <div class="form-row" style="flex-direction: row; align-items: center; gap: 0.4rem;">
+                    <input id="login-remember" name="remember" type="checkbox" style="width:auto;">
+                    <label for="login-remember" style="margin:0;">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                    Log in
+                </button>
+
+                <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-muted);">
+                    Don’t have an account yet?
+                    <a href="signup.html">Create one</a>
+                </p>
+            </form>
         </div>
-        <div class="g_id_signin" data-type="standard"></div>
+    </div>
+</main>
 
-        <hr style="margin:16px 0;border:none;height:1px;background:rgba(255,255,255,0.03)">
-        <form class="form" id="manualLogin">
-          <input class="input" placeholder="Email" required>
-          <input class="input" placeholder="Password" type="password" required>
-          <div style="display:flex;gap:8px"><button class="btn primary" type="submit">Sign in</button><a class="btn ghost" href="signup.html">Sign up</a></div>
-        </form>
-      </section>
-    </main>
+<footer class="site-footer">
+    <div class="container footer-container">
+        <p>© Assistio 2025</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </div>
+</footer>
 
-    <footer class="footer"><div>© <span id="yr5"></span> Assistio</div><div></div></footer>
-  </div>
-  <script>document.getElementById('yr5').textContent = new Date().getFullYear();</script>
+<script src="scripts.js"></script>
 </body>
 </html>
-
-
