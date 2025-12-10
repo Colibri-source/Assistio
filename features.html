@@ -1,45 +1,302 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Features — Assistio</title>
-  <link href="styles.css" rel="stylesheet">
-  <script src="scripts.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Assistio – Platform & Features</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="brand">
-        <div class="logo"><img src="logo.png" onerror="this.style.display='none'"></div>
-        <div class="title"><div class="name">Assistio</div><div class="tag">Capabilities</div></div>
-      </div>
-      <nav class="nav">
-        <a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a href="login.html" class="btn">Login</a>
-      </nav>
-    </header>
+<header class="site-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">Assistio</a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html" class="active">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn btn-primary header-cta">Book a demo</a>
+    </div>
+</header>
 
-    <main>
-      <section class="card">
-        <h2>Key features</h2>
-        <div style="margin-top:12px">
-          <div class="feature-row"><div style="width:8px;height:8px;background:var(--accent);border-radius:4px;margin-top:6px"></div><div style="margin-left:10px"><strong>Multi-channel</strong><div class="small">Web chat, email, WhatsApp, and API endpoints.</div></div></div>
-          <div class="feature-row" style="margin-top:10px"><div style="width:8px;height:8px;background:var(--accent);border-radius:4px;margin-top:6px"></div><div style="margin-left:10px"><strong>CRM sync</strong><div class="small">Two-way sync with common CRMs or custom integrations.</div></div></div>
-          <div class="feature-row" style="margin-top:10px"><div style="width:8px;height:8px;background:var(--accent);border-radius:4px;margin-top:6px"></div><div style="margin-left:10px"><strong>Human fallback</strong><div class="small">Route to live agents with context and transcript.</div></div></div>
+<main>
+    <!-- Top: The Assistio Platform -->
+    <section class="hero hero-features">
+        <div class="container">
+            <h1>The Assistio Platform</h1>
+            <p class="hero-subtitle">
+                Tools for the complete customer conversation lifecycle – from the first message to the booked appointment and follow-up.
+            </p>
         </div>
-      </section>
+    </section>
 
-      <section style="margin-top:18px" class="card">
-        <h3>Security & compliance</h3>
-        <p class="small">GDPR-friendly data handling, encrypted storage, role-based access for admin control.</p>
-      </section>
-    </main>
+    <!-- Pillars: Engage / Automate / Manage -->
+    <section class="section section-pillars">
+        <div class="container">
+            <h2>Engage. Automate. Manage.</h2>
+            <p class="section-intro">
+                Assistio combines an AI agent, multi-channel messaging, and automation behind the scenes,
+                so your team can focus on the conversations that really need a human.
+            </p>
+            <div class="grid grid-3">
+                <div class="pillar-card">
+                    <h3>Engage</h3>
+                    <p>
+                        AI that meets your customers on your website, WhatsApp, email, Instagram, and Facebook –
+                        with one consistent brain behind every response.
+                    </p>
+                </div>
+                <div class="pillar-card">
+                    <h3>Automate</h3>
+                    <p>
+                        No-code flows that turn conversations into leads, bookings, and internal actions without extra manual work.
+                    </p>
+                </div>
+                <div class="pillar-card">
+                    <h3>Manage</h3>
+                    <p>
+                        Dashboards, history, and multi-client workspaces that keep you in control of every interaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer">
-      <div>© <span id="yr2"></span> Assistio</div>
-      <div style="color:var(--muted)">—</div>
-    </footer>
-  </div>
+    <!-- ENGAGE -->
+    <section class="section section-feature-group">
+        <div class="container">
+            <h2>Engage – One assistant across all your channels</h2>
+            <p class="section-intro">
+                Customers don’t care which channel they use. Assistio keeps answers fast and consistent everywhere.
+            </p>
 
-  <script>document.getElementById('yr2').textContent = new Date().getFullYear();</script>
+            <div class="grid grid-2">
+                <!-- Website widget -->
+                <article class="feature-block">
+                    <h3>Website AI chat widget</h3>
+                    <p>
+                        Add a modern, branded widget to your site with a single snippet and turn visitors into conversations.
+                    </p>
+                    <ul>
+                        <li>Floating chat widget that works on desktop and mobile.</li>
+                        <li>Custom colors, branding, and welcome messages per business.</li>
+                        <li>Optional pre-chat form to capture name, email, or phone.</li>
+                        <li>AI answers questions using your own FAQs, policies, and content.</li>
+                    </ul>
+                </article>
+
+                <!-- WhatsApp & social -->
+                <article class="feature-block">
+                    <h3>WhatsApp, Instagram &amp; Facebook messaging</h3>
+                    <p>
+                        Connect your messaging channels so your assistant can reply to DMs and chats just like on your website.
+                    </p>
+                    <ul>
+                        <li>Support for WhatsApp, Instagram, and Facebook messaging.</li>
+                        <li>Same AI model and rules across all channels – no duplicate setup.</li>
+                        <li>Channel-specific routing and escalation rules per client.</li>
+                        <li>All customer messages are stored in a single conversation history.</li>
+                    </ul>
+                </article>
+
+                <!-- Email -->
+                <article class="feature-block">
+                    <h3>Smart email replies</h3>
+                    <p>
+                        Let Assistio handle repetitive email requests and free your team to focus on complex cases.
+                    </p>
+                    <ul>
+                        <li>Connect a support email address per business.</li>
+                        <li>AI drafts and sends replies for common questions using your FAQs.</li>
+                        <li>Complex or risky emails are flagged and forwarded to a human with a suggested draft.</li>
+                        <li>Full email history is stored alongside chat and messaging conversations.</li>
+                    </ul>
+                </article>
+
+                <!-- Human handoff -->
+                <article class="feature-block">
+                    <h3>Human handoff when needed</h3>
+                    <p>
+                        When AI shouldn’t answer, Assistio knows when to step aside and bring a human in.
+                    </p>
+                    <ul>
+                        <li>Escalate based on low confidence, specific keywords, or lead criteria.</li>
+                        <li>Send context-rich notifications to your team (email, WhatsApp, or other channels you choose).</li>
+                        <li>Your staff reply from their usual tools; Assistio relays the message back to the customer.</li>
+                        <li>Customer stays in the same channel; no forced channel switch.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTOMATE -->
+    <section class="section section-feature-group section-alt">
+        <div class="container">
+            <h2>Automate – Flows behind every conversation</h2>
+            <p class="section-intro">
+                Conversations don’t end at an answer. Use Assistio to route leads, book calls, and trigger internal workflows.
+            </p>
+
+            <div class="grid grid-2">
+                <!-- Appointment booking -->
+                <article class="feature-block">
+                    <h3>Automated appointment booking</h3>
+                    <p>
+                        Let AI book calls, demos, or visits for you – without juggling calendars over chat.
+                    </p>
+                    <ul>
+                        <li>Connect to your preferred booking tool (e.g. Calendly or similar).</li>
+                        <li>AI only offers times when you are actually available.</li>
+                        <li>Automatic confirmation messages and reminders to reduce no-shows.</li>
+                        <li>Bookings are attached to the customer record for future follow-up.</li>
+                    </ul>
+                </article>
+
+                <!-- Lead & CRM flows -->
+                <article class="feature-block">
+                    <h3>Lead capture &amp; CRM-friendly data</h3>
+                    <p>
+                        Make sure every serious inquiry becomes a qualified lead with structured data.
+                    </p>
+                    <ul>
+                        <li>Capture name, contact details, and key qualification questions from chat or messaging.</li>
+                        <li>Standardize lead fields so they are easy to push into your CRM or pipelines.</li>
+                        <li>Route high-intent leads to your sales team instantly.</li>
+                        <li>Use tags and flows to differentiate between support and sales conversations.</li>
+                    </ul>
+                </article>
+
+                <!-- No-code flows -->
+                <article class="feature-block">
+                    <h3>No-code flows powered by your automation backbone</h3>
+                    <p>
+                        Under the hood, Assistio uses no-code flows so you can adjust logic without rebuilding everything.
+                    </p>
+                    <ul>
+                        <li>Trigger flows on events like “new conversation”, “lead captured”, or “booking confirmed”.</li>
+                        <li>Send notifications to internal tools (email, Slack/Teams, etc.).</li>
+                        <li>Update external systems (CRMs, sheets, internal APIs) based on conversation events.</li>
+                        <li>Different flows per client workspace so each business behaves differently.</li>
+                    </ul>
+                </article>
+
+                <!-- Business rules -->
+                <article class="feature-block">
+                    <h3>Business rules &amp; guardrails</h3>
+                    <p>
+                        Keep your assistant within your policies and tone, even when conversations get complex.
+                    </p>
+                    <ul>
+                        <li>Define which topics AI is allowed to answer and which must always go to a human.</li>
+                        <li>Configure tone of voice and canned responses for sensitive questions.</li>
+                        <li>Set business hours and out-of-hours behavior per client.</li>
+                        <li>Update rules without redeploying or changing code.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- MANAGE -->
+    <section class="section section-feature-group">
+        <div class="container">
+            <h2>Manage – Visibility and control for every client</h2>
+            <p class="section-intro">
+                See what your assistant is doing, where humans stepped in, and how each client is performing.
+            </p>
+
+            <div class="grid grid-2">
+                <!-- Dashboard -->
+                <article class="feature-block">
+                    <h3>Conversation dashboard</h3>
+                    <p>
+                        One place to review conversations across all channels for every business you run on Assistio.
+                    </p>
+                    <ul>
+                        <li>Filter by channel, status (AI-handled vs escalated), and date range.</li>
+                        <li>Open any conversation to see full history and customer details.</li>
+                        <li>Spot recurring questions and gaps in your knowledge base.</li>
+                        <li>Use insights to improve your FAQs and flows over time.</li>
+                    </ul>
+                </article>
+
+                <!-- Basic analytics -->
+                <article class="feature-block">
+                    <h3>Basic analytics that actually matter</h3>
+                    <p>
+                        Focus on the numbers that show real impact, not vanity metrics.
+                    </p>
+                    <ul>
+                        <li>Conversation volume and channel breakdown per client.</li>
+                        <li>Share of conversations resolved by AI alone.</li>
+                        <li>Escalation rate and response times for human handoffs.</li>
+                        <li>Top topics and intents, so you know what to optimize next.</li>
+                    </ul>
+                </article>
+
+                <!-- Multi-tenant -->
+                <article class="feature-block">
+                    <h3>Multi-client workspaces for agencies</h3>
+                    <p>
+                        Manage multiple businesses from one place, with clean separation and centralized oversight.
+                    </p>
+                    <ul>
+                        <li>Dedicated workspace per client with its own channels, FAQs, and rules.</li>
+                        <li>Isolated data and configuration for each business.</li>
+                        <li>Global view for your agency to track activity and performance across all clients.</li>
+                        <li>Fast onboarding for new clients using the same underlying platform.</li>
+                    </ul>
+                </article>
+
+                <!-- Configuration -->
+                <article class="feature-block">
+                    <h3>Per-client configuration</h3>
+                    <p>
+                        Make each assistant truly feel like part of your client’s brand.
+                    </p>
+                    <ul>
+                        <li>Set business name, logo, brand color, and tone of voice.</li>
+                        <li>Configure escalation paths and business hours per workspace.</li>
+                        <li>Store channel credentials securely for each client.</li>
+                        <li>Control which features are enabled on a client-by-client basis.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-cta">
+        <div class="container cta-container">
+            <h2>See the Assistio platform in action</h2>
+            <p>
+                We’ll walk you through how Engage, Automate, and Manage work together for your specific use case.
+            </p>
+            <div class="cta-actions">
+                <a href="pricing.html" class="btn btn-secondary">View pricing</a>
+                <a href="contact.html" class="btn btn-primary">Book a demo</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-container">
+        <p>© Assistio 2025</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </div>
+</footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
