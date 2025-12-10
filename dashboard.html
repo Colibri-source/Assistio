@@ -1,47 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Dashboard — Assistio</title>
-  <link href="styles.css" rel="stylesheet">
-  <script src="scripts.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Assistio – Dashboard (Demo)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div style="display:flex;gap:12px;align-items:center">
-        <div class="logo"><img src="logo.png" onerror="this.style.display='none'"></div>
-        <div class="title"><div class="name">Assistio</div><div class="tag">Admin Dashboard</div></div>
-      </div>
-      <nav class="nav">
-        <a href="dashboard.html">Dashboard</a><a href="index.html">Public site</a><a href="contact.html">Contact</a><a href="login.html" class="btn">Logout</a>
-      </nav>
-    </header>
+<header class="site-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">Assistio</a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn btn-primary header-cta">Book a demo</a>
+    </div>
+</header>
 
-    <main>
-      <section class="card">
-        <h2>Quick metrics</h2>
-        <div style="display:flex;gap:12px;margin-top:12px">
-          <div class="card" style="flex:1"><div style="font-size:24px;font-weight:700">1,240</div><div class="small">Conversations / mo</div></div>
-          <div class="card" style="flex:1"><div style="font-size:24px;font-weight:700">95%</div><div class="small">CSAT</div></div>
-          <div class="card" style="flex:1"><div style="font-size:24px;font-weight:700">2h</div><div class="small">Avg resolution</div></div>
+<main class="dashboard-page">
+    <div class="container">
+        <h1>Assistio Dashboard (Demo)</h1>
+        <p style="color: var(--text-muted); max-width: 640px; margin-top: 0.4rem;">
+            This is a static demo view so you can show how the real dashboard might look: conversations,
+            AI performance, and client workspaces. When you connect the backend, you can replace the hard-coded
+            numbers with live data.
+        </p>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h3>Total conversations (last 30 days)</h3>
+                <div class="dashboard-metric">1,284</div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                    Across all channels and workspaces.
+                </p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>AI-resolved rate</h3>
+                <div class="dashboard-metric">71%</div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                    Conversations handled fully by AI without human escalation.
+                </p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Active client workspaces</h3>
+                <div class="dashboard-metric">7</div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                    Example number to show agency view.
+                </p>
+            </div>
         </div>
-      </section>
 
-      <section class="card" style="margin-top:12px">
-        <h3>Manage Agents</h3>
-        <p class="small">Quick toggles for live agents, routing rules, and canned responses. (This is a static mock — wire to real backend later.)</p>
-        <div style="margin-top:10px;display:flex;gap:8px">
-          <button class="btn">Edit flows</button>
-          <button class="btn">Upload model</button>
-          <button class="btn ghost">Export logs</button>
-        </div>
-      </section>
-    </main>
+        <section>
+            <h2 style="margin-bottom: 0.4rem;">Recent conversations (example)</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.7rem;">
+                Demo table showing how you might present channel, status, and who handled the conversation.
+            </p>
+            <div style="overflow-x:auto;">
+                <table style="width:100%; border-collapse: collapse; font-size: 0.9rem;">
+                    <thead>
+                    <tr>
+                        <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">Customer</th>
+                        <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">Channel</th>
+                        <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">Workspace</th>
+                        <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">Status</th>
+                        <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">Handled by</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">John D.</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Website chat</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Clinic A</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Resolved</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">AI only</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Sarah K.</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">WhatsApp</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Real estate</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Escalated</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Human</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Mark C.</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Email</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Restaurant</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">Resolved</td>
+                        <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.04);">AI + human</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</main>
 
-    <footer class="footer"><div>© <span id="yr7"></span> Assistio</div><div></div></footer>
-  </div>
+<footer class="site-footer">
+    <div class="container footer-container">
+        <p>© Assistio 2025</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </div>
+</footer>
 
-  <script>document.getElementById('yr7').textContent = new Date().getFullYear();</script>
+<script src="scripts.js"></script>
 </body>
 </html>
-
