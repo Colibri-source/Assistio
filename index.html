@@ -1,121 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Assistio — AI Customer Service</title>
-  <link href="styles.css" rel="stylesheet">
-  <meta name="description" content="AI customer service agent that automates support, reduces costs, improves CSAT.">
-  <script src="scripts.js" defer></script>
-  <!-- Google Identity (client-side) -->
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta charset="UTF-8">
+    <title>Assistio – AI Support That Answers, Sells, and Never Sleeps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Update path if your CSS file is different -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="brand">
-        <div class="logo" id="logo-placeholder">
-          <!-- put your logo file named logo.png in the site folder -->
-          <img src="logo.png" alt="logo" onerror="this.style.display='none'">
-        </div>
-        <div class="title">
-          <div class="name">Assistio</div>
-          <div class="tag">AI customer service made ruthless & efficient</div>
-        </div>
-      </div>
+<header class="site-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">Assistio</a>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn btn-primary header-cta">Book a demo</a>
+    </div>
+</header>
 
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html" class="btn">Login</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-left">
-          <h1 class="h-strap">Support that answers, sells, and never sleeps.</h1>
-          <p class="h-sub">Deploy AI agents that handle questions, book demos, qualify leads, and reduce support costs. Fast setup: integrate with your CRM and have results within days.</p>
-          <div class="cta-row">
-            <a class="btn primary" href="pricing.html">Get started</a>
-            <a class="btn ghost" href="features.html">See features</a>
-          </div>
-
-          <div class="features" style="margin-top:18px">
-            <div class="feature-row">
-              <div style="width:6px;height:6px;background:var(--accent);border-radius:3px;margin-top:8px"></div>
-              <div>
-                <strong>Ready-to-deploy</strong>
-                <div class="small">Prebuilt conversation flows for e-commerce, SaaS, and enterprise.</div>
-              </div>
+<main>
+    <!-- Hero -->
+    <section class="hero hero-home">
+        <div class="container hero-container">
+            <div class="hero-left">
+                <h1>Support that answers, sells, and never sleeps.</h1>
+                <p class="hero-subtitle">
+                    Assistio connects AI to your website, WhatsApp, email, Instagram, and Facebook so you can answer
+                    customers instantly, qualify leads, and book appointments – without hiring a big support team.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn btn-primary">Start 14-day trial</a>
+                    <a href="features.html" class="btn btn-secondary">See how it works</a>
+                </div>
+                <p class="hero-note">
+                    $150/month per business · $150 one-time setup · No long-term contract.
+                </p>
             </div>
-
-            <div class="feature-row">
-              <div style="width:6px;height:6px;background:var(--accent);border-radius:3px;margin-top:8px"></div>
-              <div>
-                <strong>Integrates with tools</strong>
-                <div class="small">Zendesk, Intercom, Shopify, custom webhooks and APIs.</div>
-              </div>
+            <div class="hero-right">
+                <!-- Replace this with your own illustration/screenshot later -->
+                <div class="hero-card">
+                    <p class="hero-card-title">One inbox for all your channels</p>
+                    <ul class="hero-card-list">
+                        <li>Website chat: “Do you have availability this week?”</li>
+                        <li>WhatsApp: “Can I book a consultation?”</li>
+                        <li>Instagram DM: “What’s the price for…?”</li>
+                    </ul>
+                    <p class="hero-card-footer">
+                        Assistio answers the simple stuff and sends the rest to your team.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-        <aside class="hero-right">
-          <div style="display:flex;align-items:center;justify-content:space-between">
-            <div>
-              <div class="profile-placeholder" id="photo-slot">Your Photo</div>
+    <!-- Quick benefits -->
+    <section class="section section-benefits">
+        <div class="container">
+            <h2>Why teams use Assistio</h2>
+            <div class="grid grid-3">
+                <div class="benefit-card">
+                    <h3>Faster replies, happier customers</h3>
+                    <p>
+                        AI answers common questions in seconds, 24/7, so customers never wait for opening hours.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <h3>More booked calls and leads</h3>
+                    <p>
+                        Turn conversations into booked appointments and qualified leads, automatically.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Less repetitive work for your team</h3>
+                    <p>
+                        Your staff focus on complex cases while Assistio handles the first line of support.
+                    </p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div style="text-align:right">
-              <div style="font-size:13px;color:var(--muted)">Trusted by</div>
-              <div style="margin-top:8px;color:var(--text);font-weight:700">50+ early clients</div>
+    <!-- Channels -->
+    <section class="section section-channels">
+        <div class="container">
+            <h2>One assistant, all your main channels</h2>
+            <p class="section-intro">
+                Customers message you everywhere. Assistio uses the same brain across channels so answers stay consistent.
+            </p>
+            <div class="grid grid-4">
+                <div class="channel-card">
+                    <h3>Website chat</h3>
+                    <p>Embed a fast, branded chat widget on your site and answer visitors instantly.</p>
+                </div>
+                <div class="channel-card">
+                    <h3>WhatsApp</h3>
+                    <p>Connect your WhatsApp number so AI can reply to common questions and route key chats to you.</p>
+                </div>
+                <div class="channel-card">
+                    <h3>Email</h3>
+                    <p>AI drafts and sends replies to repetitive emails and forwards tricky ones with a suggested answer.</p>
+                </div>
+                <div class="channel-card">
+                    <h3>Instagram &amp; Facebook</h3>
+                    <p>Handle DMs from social channels with the same assistant and flows.</p>
+                </div>
             </div>
-          </div>
-          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0;border-radius:2px">
-          <div class="small">Quick demo — watch a 60s walkthrough</div>
-        </aside>
-      </section>
-
-      <section class="grid">
-        <div class="card">
-          <h3>Automated support</h3>
-          <p>Answer tickets, escalate when needed, and maintain context across sessions.</p>
         </div>
-        <div class="card">
-          <h3>Lead qualification</h3>
-          <p>AI qualifies leads, books meetings, and pushes data to your CRM.</p>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-how-it-works">
+        <div class="container">
+            <h2>How Assistio works</h2>
+            <div class="grid grid-3 steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>We connect your channels</h3>
+                    <p>
+                        We plug Assistio into your website, WhatsApp, email, Instagram and Facebook using our automation
+                        backbone, with everything isolated per client workspace.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>We train it on your business</h3>
+                    <p>
+                        You share your FAQs, policies, and key information. We set up your AI answers, flows, and rules
+                        so it behaves like a trained assistant.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>AI answers – humans step in when needed</h3>
+                    <p>
+                        Assistio handles the repetitive questions and bookings. When it is not sure, it escalates to your
+                        team with full context, on the same channel.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <h3>Analytics</h3>
-          <p>Track CSAT, resolution time, and agent handoffs with clear dashboards.</p>
+    </section>
+
+    <!-- Who it's for -->
+    <section class="section section-who-for">
+        <div class="container">
+            <h2>Who is Assistio for?</h2>
+            <div class="grid grid-3">
+                <div class="who-card">
+                    <h3>Service businesses</h3>
+                    <p>
+                        Clinics, real estate, restaurants, salons and more – anyone booking appointments and answering
+                        the same questions every day.
+                    </p>
+                </div>
+                <div class="who-card">
+                    <h3>Agencies</h3>
+                    <p>
+                        Offer AI support as a service to your clients. Run multiple workspaces from one place, each with
+                        its own widget, channels, and flows.
+                    </p>
+                </div>
+                <div class="who-card">
+                    <h3>Online businesses</h3>
+                    <p>
+                        E-commerce and digital products that need quick answers on pricing, availability, order status,
+                        and basic support.
+                    </p>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section style="margin-top:18px" class="card">
-        <h3>How it works</h3>
-        <p class="small">Deploy an agent on web chat, email, and WhatsApp. Connect your APIs. Collect tickets and let AI triage. Human fallback with seamless handover.</p>
-      </section>
-
-      <section style="margin-top:18px" class="card">
-        <h3>Try it</h3>
-        <p class="small">Start a 14-day trial. No credit card required.</p>
-        <div style="margin-top:12px">
-          <a class="btn primary" href="signup.html">Start trial</a>
+    <!-- Preview of features / CTA -->
+    <section class="section section-highlight">
+        <div class="container highlight-container">
+            <div class="highlight-text">
+                <h2>What you get with Assistio</h2>
+                <ul>
+                    <li>AI website chat widget connected to your own FAQs and content.</li>
+                    <li>WhatsApp, email, Instagram, and Facebook integration.</li>
+                    <li>Automated lead capture and appointment booking flows.</li>
+                    <li>Automatic handoff to humans for complex or high-value cases.</li>
+                    <li>Basic dashboard and conversation history for full visibility.</li>
+                </ul>
+                <div class="highlight-actions">
+                    <a href="features.html" class="btn btn-secondary">Explore all features</a>
+                    <a href="pricing.html" class="btn btn-ghost">View pricing</a>
+                </div>
+            </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="footer">
-      <div>© <span id="yr"></span>Assistio</div>
-      <div><a href="privacy.html" style="color:var(--muted);text-decoration:none">Privacy</a> · <a href="terms.html" style="color:var(--muted);text-decoration:none">Terms</a></div>
-    </footer>
-  </div>
+    <!-- Final CTA -->
+    <section class="section section-cta">
+        <div class="container cta-container">
+            <h2>Ready to see Assistio in action?</h2>
+            <p>
+                We will connect one of your channels, load your FAQs, and show you how much work you can automate in
+                the first weeks.
+            </p>
+            <div class="cta-actions">
+                <a href="contact.html" class="btn btn-primary">Book a demo</a>
+                <a href="contact.html" class="btn btn-secondary">Talk to us about your use case</a>
+            </div>
+        </div>
+    </section>
+</main>
 
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
+<footer class="site-footer">
+    <div class="container footer-container">
+        <p>© Assistio 2025</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </div>
+</footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
-
