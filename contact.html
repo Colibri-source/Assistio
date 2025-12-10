@@ -1,36 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact — Assistio</title>
-  <link href="styles.css" rel="stylesheet">
-  <script src="scripts.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Assistio – Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="brand"><div class="logo"><img src="logo.png" onerror="this.style.display='none'"></div><div class="title"><div class="name">Assistio</div><div class="tag">Contact</div></div></div>
-      <nav class="nav"><a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a href="login.html" class="btn">Login</a></nav>
-    </header>
+<header class="site-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">Assistio</a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn btn-primary header-cta">Book a demo</a>
+    </div>
+</header>
 
-    <main>
-      <section class="card">
-        <h2>Contact sales</h2>
-        <form class="form" id="contactForm" action="https://formspree.io/f/xpwelvzy" method="POST">
-          <input class="input" name="name" placeholder="Your name" required>
-          <input class="input" name="email" placeholder="Email" type="email" required>
-          <input class="input" name="company" placeholder="Company (optional)">
-          <textarea name="message" placeholder="Tell us what you need"></textarea>
-          <div style="display:flex;gap:8px">
-            <button type="submit" class="btn primary">Send message</button>
-            <a class="btn ghost" href="mailto:sales@yourdomain.com">Email directly</a>
-          </div>
-        </form>
-        <div class="small" style="margin-top:8px">Or book a call — we’ll respond within one business day.</div>
-      </section>
-    </main>
+<main>
+    <section class="hero hero-contact">
+        <div class="container">
+            <h1>Contact us</h1>
+            <p class="hero-subtitle">
+                Tell us about your business and we’ll show you how Assistio can automate your support and lead handling.
+            </p>
+        </div>
+    </section>
 
-    <footer class="footer"><div>© <span id="yr4"></span> Assistio</div><div></div></footer>
-  </div>
-  <script>document.getElementById('yr4').textContent = new Date().getFullYear();</script>
+    <section class="section section-contact">
+        <div class="container contact-container">
+            <div class="contact-left">
+                <h2>Send us a message</h2>
+                <p>
+                    Fill out the form and we will get back to you within one business day.
+                </p>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Work email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="company">Company</label>
+                        <input id="company" name="company" type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="website">Website (optional)</label>
+                        <input id="website" name="website" type="url">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">How can we help?</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <h2>Book a call</h2>
+                <p>
+                    Prefer to talk live? Book a quick call and we’ll walk you through the Assistio Pack and how it would
+                    work for your business.
+                </p>
+                <!-- Replace # with your Calendly/booking link when ready -->
+                <a href="#" class="btn btn-secondary">Book a demo call</a>
+
+                <div class="contact-details">
+                    <h3>Other ways to reach us</h3>
+                    <p>Email: <a href="mailto:hello@assistio.com">hello@assistio.com</a></p>
+                    <!-- Add phone or other contact options if you want -->
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-container">
+        <p>© Assistio 2025</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </div>
+</footer>
 </body>
 </html>
