@@ -1,107 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Assistio – Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Contact — Assistio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header">
-    <div class="container header-container">
-        <a href="index.html" class="logo">Assistio</a>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
-        <a href="contact.html" class="btn btn-primary header-cta">Book a demo</a>
-    </div>
-</header>
+  <div class="container">
+    <!-- Header / Nav -->
+    <header class="header">
+      <a href="index.html" class="brand">
+        <div class="logo">
+          <img src="logo.png" alt="Assistio logo" />
+        </div>
+        <div class="title">
+          <span class="name">Assistio</span>
+          <span class="tag">AI support & lead assistant</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn primary">Book a demo</a>
+      </nav>
+    </header>
 
-<main>
-    <section class="hero hero-contact">
-        <div class="container">
-            <h1>Contact us</h1>
-            <p class="hero-subtitle">
-                Tell us about your business and we’ll show you how Assistio can automate your support and lead handling.
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <p class="small">Contact</p>
+          <h1 class="h-strap">Talk to us about your use case.</h1>
+          <p class="h-sub">
+            Tell us about your business, channels, and FAQs. We’ll reply within one business
+            day and show you what we can automate in the first 2 months.
+          </p>
+          <p class="small">
+            Prefer email directly? Reach us at
+            <strong>mishal.almoqdad@gmail.com</strong> or
+            <strong>colibri.co.140@gmail.com</strong>.
+          </p>
+          <p class="small" style="margin-top:6px;">
+            Last updated: 10 December 2025
+          </p>
+        </div>
+
+        <div class="hero-right">
+          <h2 style="margin-top:0;margin-bottom:10px;font-size:18px;">Contact form</h2>
+
+          <!-- Functional contact form using mailto -->
+          <form
+            class="form"
+            action="mailto:mishal.almoqdad@gmail.com,colibri.co.140@gmail.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <label class="small">
+              Full name
+              <input class="input" type="text" name="Name" required />
+            </label>
+
+            <label class="small">
+              Business name
+              <input class="input" type="text" name="Business" />
+            </label>
+
+            <label class="small">
+              Email
+              <input class="input" type="email" name="Email" required />
+            </label>
+
+            <label class="small">
+              Main website
+              <input class="input" type="url" name="Website" placeholder="https://example.com" />
+            </label>
+
+            <label class="small">
+              What do you want Assistio to help with?
+              <select class="input" name="Goal">
+                <option value="support">Customer support</option>
+                <option value="leads">Lead generation</option>
+                <option value="both">Both support & leads</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+
+            <label class="small">
+              Your main channels today
+              <input
+                class="input"
+                type="text"
+                name="Channels"
+                placeholder="e.g. Website, WhatsApp, Instagram, Facebook, Email"
+              />
+            </label>
+
+            <label class="small">
+              Your main FAQs (questions + answers)
+              <textarea
+                name="FAQs"
+                placeholder="Paste your top questions and answers here, for example:
+Q: What are your opening hours?
+A: We are open Monday–Friday, 9:00–18:00.
+Q: How can I book an appointment?
+A: ...">
+              </textarea>
+            </label>
+
+            <label class="small">
+              Anything else we should know?
+              <textarea
+                name="Notes"
+                placeholder="Share any extra context, systems you use, or constraints."
+              ></textarea>
+            </label>
+
+            <button type="submit" class="btn primary" style="justify-content:center;">
+              Send message
+            </button>
+
+            <p class="small">
+              This form will open your default email app and send the details to
+              <strong>mishal.almoqdad@gmail.com</strong> and
+              <strong>colibri.co.140@gmail.com</strong>.
             </p>
+          </form>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="section section-contact">
-        <div class="container contact-container">
-            <div class="contact-left">
-                <h2>Send us a message</h2>
-                <p>
-                    Fill out the form and we will get back to you within one business day.
-                </p>
-                <form class="contact-form" action="#" method="post">
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" required>
-                    </div>
+    <footer class="footer">
+      <span>© Assistio 2025</span>
+      <span>
+        <a href="index.html">Home</a> ·
+        <a href="features.html">Features</a> ·
+        <a href="pricing.html">Pricing</a> ·
+        <a href="faq.html">FAQ</a> ·
+        <a href="contact.html">Contact</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </span>
+    </footer>
+  </div>
 
-                    <div class="form-row">
-                        <label for="email">Work email</label>
-                        <input id="email" name="email" type="email" required>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="company">Company</label>
-                        <input id="company" name="company" type="text">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="website">Website (optional)</label>
-                        <input id="website" name="website" type="url">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="message">How can we help?</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Send message</button>
-                </form>
-            </div>
-
-            <div class="contact-right">
-                <h2>Book a call</h2>
-                <p>
-                    Prefer to talk live? Book a quick call and we’ll walk you through the Assistio Pack and how it would
-                    work for your business.
-                </p>
-                <!-- Replace # with your Calendly/booking link when ready -->
-                <a href="#" class="btn btn-secondary">Book a demo call</a>
-
-                <div class="contact-details">
-                    <h3>Other ways to reach us</h3>
-                    <p>Email: <a href="mailto:hello@assistio.com">hello@assistio.com</a></p>
-                    <!-- Add phone or other contact options if you want -->
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="site-footer">
-    <div class="container footer-container">
-        <p>© Assistio 2025</p>
-        <nav class="footer-nav">
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="terms.html">Terms</a>
-        </nav>
-    </div>
-</footer>
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
-
