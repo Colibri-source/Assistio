@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Assistio – Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Assistio Logo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header">
-    <div class="container header-container">
-        <a href="index.html" class="logo">Assistio</a>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <a href="contact.html" class="btn btn-primary header-cta">Book a demo</a>
-    </div>
-</header>
-
-<main class="auth-page">
-    <div class="container">
-        <div class="auth-card">
-            <h1>Log in to Assistio</h1>
-            <p>Access your Assistio dashboard and manage your clients and conversations.</p>
-
-            <form class="form" action="#" method="post" onsubmit="handleLogin(event)">
-                <div class="form-row">
-                    <label for="login-email">Work email</label>
-                    <input id="login-email" name="email" type="email" required placeholder="you@company.com">
-                </div>
-
-                <div class="form-row">
-                    <label for="login-password">Password</label>
-                    <input id="login-password" name="password" type="password" required placeholder="••••••••">
-                </div>
-
-                <div class="form-row" style="flex-direction: row; align-items: center; gap: 0.4rem;">
-                    <input id="login-remember" name="remember" type="checkbox" style="width:auto;">
-                    <label for="login-remember" style="margin:0;">Remember me</label>
-                </div>
-
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                    Log in
-                </button>
-
-                <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-muted);">
-                    Don’t have an account yet?
-                    <a href="signup.html">Create one</a>
-                </p>
-            </form>
+  <div class="container">
+    <!-- Header / Nav -->
+    <header class="header">
+      <a href="index.html" class="brand">
+        <div class="logo">
+          <img src="logo.png" alt="Assistio logo" />
         </div>
-    </div>
-</main>
+        <div class="title">
+          <span class="name">Assistio</span>
+          <span class="tag">AI support & lead assistant</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn primary">Book a demo</a>
+      </nav>
+    </header>
 
-<footer class="site-footer">
-    <div class="container footer-container">
-        <p>© Assistio 2025</p>
-        <nav class="footer-nav">
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="terms.html">Terms</a>
-        </nav>
-    </div>
-</footer>
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h1 class="h-strap">Assistio brand logo</h1>
+          <p class="h-sub">
+            This page shows the current Assistio logo as it appears in the product header.
+            The file used is <code>logo.png</code> in the project root.
+          </p>
+          <p class="small">
+            You can reuse this logo in pitch decks, proposals, and internal docs. When you
+            update <code>logo.png</code>, this page and the site header will update
+            automatically.
+          </p>
+        </div>
+        <div class="hero-right" style="display:flex;align-items:center;justify-content:center;">
+          <div class="logo" style="width:120px;height:120px;">
+            <img src="logo.png" alt="Assistio logo" />
+          </div>
+        </div>
+      </section>
+    </main>
 
-<script src="scripts.js"></script>
+    <footer class="footer">
+      <span>© Assistio 2025</span>
+      <span>
+        <a href="index.html">Home</a> ·
+        <a href="features.html">Features</a> ·
+        <a href="pricing.html">Pricing</a> ·
+        <a href="faq.html">FAQ</a> ·
+        <a href="contact.html">Contact</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </span>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
