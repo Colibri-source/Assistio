@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Assistio — Multi-channel messaging MVP in 60 days</title>
+  <meta name="description" content="A dark, minimal website for Assistio: unify website chat, email, and WhatsApp with simple routing and human handoff—delivered in the first 60 days."/>
+  <meta name="theme-color" content="#0b0f14"/>
+  <link rel="icon" href="assets/logo.png"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Assistio Home">
+          <img src="assets/logo.png" alt="Assistio logo"/>
+          <div>
+            <div class="name">ASSISTIO</div>
+            <div class="tag">Multi-channel MVP (60 days)</div>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a href="index.html" data-nav>Home</a>
+          <a href="features.html" data-nav>Features</a>
+          <a href="pricing.html" data-nav>Pricing</a>
+          <a href="faq.html" data-nav>FAQ</a>
+          <a href="book.html" data-nav>Book a call</a>
+          <a href="contact.html" data-nav>Contact</a>
+        </nav>
+
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div id="mobilemenu" class="mobilemenu hidden" aria-label="Mobile menu">
+        <a href="index.html" data-nav>Home</a>
+        <a href="features.html" data-nav>Features</a>
+        <a href="pricing.html" data-nav>Pricing</a>
+        <a href="faq.html" data-nav>FAQ</a>
+        <a href="book.html" data-nav>Book a call</a>
+        <a href="contact.html" data-nav>Contact</a>
+        <a href="login.html" data-nav>Login</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="kicker"><span class="dot"></span> Built for the first 60 days: ship, onboard, deliver</div>
+            <h1>One inbox for Website Chat, Email, and WhatsApp.</h1>
+            <p class="lead">
+              Assistio sets up a clean multi-channel workflow for your business—routing, acknowledgements, and human handoff.
+              No hype. Only what we deliver in the first 2 months.
+            </p>
+            <div class="hero-ctas">
+              <button class="btn primary" data-booking>Book a 15‑min call</button>
+              <a class="btn" href="pricing.html">See pricing</a>
+              </div>
+
+            <div class="mini">
+              <div class="item">
+                <div class="t">Go-live fast</div>
+                <div class="d">Setup + first flows deployed quickly after onboarding.</div>
+              </div>
+              <div class="item">
+                <div class="t">Human-ready</div>
+                <div class="d">Routing + handoff so your team stays in control.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel pad">
+            <div class="badge"><strong>Included</strong> in first 60 days</div>
+            <div class="price">
+              <div class="num">$150</div>
+              <div class="per">/ month</div>
+            </div>
+            <div class="small" style="color:var(--muted); margin-top:-6px">
+              + one-time setup fee (to launch your channels and workflows).
+            </div>
+            <hr class="sep"/>
+
+            <ul class="list" aria-label="Key deliverables">
+              <li><span class="check">✓</span> Website chat widget + Email + WhatsApp intake</li>
+              <li><span class="check">✓</span> Routing rules, acknowledgements, handoff</li>
+              <li><span class="check">✓</span> Basic logging + reliability (retries / alerts)</li>
+              <li><span class="check">✓</span> Onboarding checklist + support process</li>
+            </ul>
+
+            <div style="margin-top:16px" class="split">
+              <a class="btn full" href="features.html">See full MVP scope</a>
+              <a class="btn primary full" href="pricing.html">Start now</a>
+            </div>
+
+            <p class="help" style="margin-top:12px">
+              You won’t see later-stage promises here. We focus on what is deliverable now.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container">
+        <div class="grid cols3">
+          <div class="card">
+            <h3>Unified intake</h3>
+            <p>All messages land in one operational flow with consistent tagging and routing.</p>
+          </div>
+          <div class="card">
+            <h3>Fast handoff</h3>
+            <p>Auto-acknowledge, then route to the right person or queue—without losing context.</p>
+          </div>
+          <div class="card">
+            <h3>Clear setup</h3>
+            <p>Simple onboarding and a repeatable launch checklist. No chaos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="h2">How it works</h2>
+        <p class="sub">A minimal implementation designed to start producing value immediately.</p>
+
+        <div class="grid cols3">
+          <div class="card">
+            <h3>1) Connect channels</h3>
+            <p>We connect your website chat, email, and WhatsApp to the same workflow.</p>
+          </div>
+          <div class="card">
+            <h3>2) Add routing rules</h3>
+            <p>We implement simple logic: who gets what, when, and what auto-replies go out.</p>
+          </div>
+          <div class="card">
+            <h3>3) Go live + iterate</h3>
+            <p>We monitor, fix edge cases, and keep the MVP tight within the 60‑day scope.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:18px" class="notice">
+          <strong>Scope discipline:</strong> If a request is outside the first 60 days MVP, we record it for later—but we do not promise it on this website.
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container">
+        <div class="panel pad">
+          <div class="split">
+            <div>
+              <h2 class="h2" style="margin-bottom:6px">Ready to launch?</h2>
+              <p class="sub" style="margin-bottom:0">
+                Book a short call. If you’re a fit, we’ll start with onboarding and channel access.
+              </p>
+            </div>
+            <div style="display:flex; gap:10px; align-items:center; justify-content:flex-end; flex-wrap:wrap">
+              <button class="btn primary" data-booking>Book a call</button>
+              <a class="btn" href="pricing.html">Pricing</a>
+              <a class="btn ghost" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="copyrow">
+            <span class="badge"><strong>Assistio</strong> MVP delivery only (first 60 days)</span>
+          </div>
+          <p class="small" style="margin:12px 0 0">
+            Support: <a href="mailto:mishal.almoqdad@gmail.com">mishal.almoqdad@gmail.com</a> ·
+            <a href="mailto:colibri.co.140@gmail.com">colibri.co.140@gmail.com</a>
+          </p>
+          <p class="small" style="margin:10px 0 0">
+            © <span data-year></span> Assistio. All rights reserved.
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="index.html" data-nav>Home</a>
+            <a href="privacy.html" data-nav>Privacy</a>
+            <a href="terms.html" data-nav>Terms</a>
+            <a href="pricing.html" data-nav>Pricing</a>
+            <a href="contact.html" data-nav>Contact</a>
+          </div>
+          <p class="small" style="margin:12px 0 0">
+            Focused on a clean 60‑day MVP—clear scope, reliable delivery. More refinements will follow as we learn from customers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
