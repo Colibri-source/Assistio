@@ -2,138 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Assistio — Terms of Service</title>
-  <meta name="description" content="Terms of Service for Assistio (MVP). Defines scope, payment, acceptable use, limitations, and support for the first 60 days."/>
-  <meta name="theme-color" content="#0b0f14"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Terms of Service — Assistio</title>
   <link rel="icon" href="assets/logo.png"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header class="topbar">
+  <header class="nav">
     <div class="container">
-      <div class="nav">
-        <a class="brand" href="index.html" aria-label="Assistio Home">
+      <div class="nav-inner">
+        <a class="brand" href="index.html#home">
           <img src="assets/logo.png" alt="Assistio logo"/>
-          <div>
+          <div class="brand-col">
             <div class="name">ASSISTIO</div>
-            <div class="tag">Multi-channel MVP (60 days)</div>
+            <div class="tag">Terms</div>
           </div>
         </a>
-
-        <nav class="navlinks" aria-label="Primary">
-          <a href="index.html" data-nav>Home</a>
-          <a href="features.html" data-nav>Features</a>
-          <a href="pricing.html" data-nav>Pricing</a>
-          <a href="faq.html" data-nav>FAQ</a>
-          <a href="book.html" data-nav>Book a call</a>
-          <a href="contact.html" data-nav>Contact</a>
+        <nav class="links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#contact">Contact</a>
         </nav>
-
-        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        </button>
+        <div class="nav-cta">
+          <button class="btn ghost small" data-action="book">Book a call</button>
+        </div>
+        <button id="hamburger" class="hamburger" aria-label="Open menu">☰</button>
       </div>
-
-      <div id="mobilemenu" class="mobilemenu hidden" aria-label="Mobile menu">
-        <a href="index.html" data-nav>Home</a>
-        <a href="features.html" data-nav>Features</a>
-        <a href="pricing.html" data-nav>Pricing</a>
-        <a href="faq.html" data-nav>FAQ</a>
-        <a href="book.html" data-nav>Book a call</a>
-        <a href="contact.html" data-nav>Contact</a>
-        <a href="login.html" data-nav>Login</a>
+      <div id="mobileMenu" class="mobile" style="display:none">
+        <div class="stack">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
       </div>
     </div>
   </header>
 
-
   <main>
-    <section class="section">
+    <section>
       <div class="container">
-        <h1 style="font-size:34px; margin:0 0 10px">Terms of Service</h1>
-        <p class="sub">Effective date: December 13, 2025</p>
+        <div class="card" style="padding:26px">
+          <h1 class="h2" style="font-size:34px">Terms of Service</h1>
+          <p class="sub" style="max-width:80ch">Effective date: December 14, 2025</p>
 
-        <div class="panel pad">
-          <h2 class="h2">1. Scope (MVP only)</h2>
-          <p class="small" style="color:var(--muted)">
-            We provide the services described on this website limited to the first 60 days MVP scope: website chat widget, email intake, WhatsApp intake, routing rules, acknowledgements, human handoff, and basic reliability (logging, retries, alerts).
-            Anything not listed is out of scope unless agreed in writing.
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 10px">Service scope</h3>
+          <p class="sub" style="max-width:90ch">
+            Assistio provides a focused MVP delivery within the first 60 days. The service covers channel intake (website chat, email, WhatsApp),
+            routing rules, acknowledgements, handoff, and basic reliability features as described on the website.
           </p>
 
-          <h2 class="h2" style="margin-top:18px">2. Customer responsibilities</h2>
-          <ul class="list">
-            <li><span class="check">✓</span> Provide timely access to required accounts (email, website, WhatsApp / Meta as applicable).</li>
-            <li><span class="check">✓</span> Ensure you have the rights to connect the channels and process messages.</li>
-            <li><span class="check">✓</span> Use the service in compliance with applicable laws and platform policies.</li>
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 10px">Customer responsibilities</h3>
+          <ul class="ul">
+            <li>Provide required access (website, email, WhatsApp Business admin access where applicable).</li>
+            <li>Ensure that information provided is accurate and that you have rights to use connected accounts.</li>
+            <li>Use the service in compliance with applicable laws and platform policies.</li>
           </ul>
 
-          <h2 class="h2" style="margin-top:18px">3. Payments</h2>
-          <p class="small" style="color:var(--muted)">
-            The monthly subscription and one-time setup fee are payable via Stripe Payment Links or by invoice if agreed.
-            Fees are non-refundable once work has started, except where required by law.
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 10px">Payments</h3>
+          <p class="sub" style="max-width:90ch">
+            Payments are processed via Stripe. Subscription management and cancellation are handled through Stripe checkout and customer portal where available.
           </p>
 
-          <h2 class="h2" style="margin-top:18px">4. Support</h2>
-          <p class="small" style="color:var(--muted)">
-            Support is provided via email during the MVP. We prioritize stability and delivery inside the agreed scope.
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 10px">Limitations</h3>
+          <p class="sub" style="max-width:90ch">
+            The service is provided “as is” and may depend on third-party platforms. To the maximum extent permitted by law, Assistio is not liable for indirect or consequential damages.
           </p>
 
-          <h2 class="h2" style="margin-top:18px">5. Limitations</h2>
-          <p class="small" style="color:var(--muted)">
-            We do not guarantee uninterrupted availability of third-party platforms (email providers, WhatsApp, hosting). We will make reasonable efforts to mitigate failures within the MVP design.
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 10px">Contact</h3>
+          <p class="sub" style="max-width:90ch">
+            Questions about these Terms can be sent to <strong>mishal.almoqdad@gmail.com</strong> or <strong>colibri.co.140@gmail.com</strong>.
           </p>
 
-          <h2 class="h2" style="margin-top:18px">6. Termination</h2>
-          <p class="small" style="color:var(--muted)">
-            Either party may terminate with written notice. Upon termination, access to systems and workflows is handled according to the offboarding agreement (if any).
-          </p>
-
-          <h2 class="h2" style="margin-top:18px">7. Contact</h2>
-          <p class="small" style="color:var(--muted)">
-            Terms questions: <a href="mailto:mishal.almoqdad@gmail.com">mishal.almoqdad@gmail.com</a> or
-            <a href="mailto:colibri.co.140@gmail.com">colibri.co.140@gmail.com</a>.
-          </p>
-
-          <div class="notice" style="margin-top:16px">
-            <strong>Disclaimer:</strong> This template is for an MVP and does not replace legal advice. If you operate in a regulated context, you should obtain counsel.
+          <div style="margin-top:18px">
+            <a class="btn ghost" href="index.html#contact">Back to Contact</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-    <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="copyrow">
-            <span class="badge"><strong>Assistio</strong> MVP delivery only (first 60 days)</span>
-          </div>
-          <p class="small" style="margin:12px 0 0">
-            Support: <a href="mailto:mishal.almoqdad@gmail.com">mishal.almoqdad@gmail.com</a> ·
-            <a href="mailto:colibri.co.140@gmail.com">colibri.co.140@gmail.com</a>
-          </p>
-          <p class="small" style="margin:10px 0 0">
-            © <span data-year></span> Assistio. All rights reserved.
-          </p>
-        </div>
-        <div>
-          <div class="footer-links">
-            <a href="index.html" data-nav>Home</a>
-            <a href="privacy.html" data-nav>Privacy</a>
-            <a href="terms.html" data-nav>Terms</a>
-            <a href="pricing.html" data-nav>Pricing</a>
-            <a href="contact.html" data-nav>Contact</a>
-          </div>
-          <p class="small" style="margin:12px 0 0">
-            Focused on a clean 60‑day MVP—clear scope, reliable delivery. More refinements will follow as we learn from customers.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
 
   <script src="scripts.js"></script>
 </body>

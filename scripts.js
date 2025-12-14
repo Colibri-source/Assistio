@@ -1,182 +1,101 @@
-/*
-  Assistio static site script
-  - Mobile menu toggle
-  - Active nav highlighting
-  - Contact / FAQ mailto helpers
-  - Stripe Payment Link wiring (static-friendly)
-*/
-
-const AssistioConfig = {
-  // Replace these with YOUR Stripe Payment Links (created in Stripe Dashboard)
-  stripe: {
-    // Assistio – Automation Pack
-    subscriptionStarter: "https://buy.stripe.com/cNi6oH3XA13u6bD8NI8IU01",
-
-    // Assistio – Setup Fee
-    setupFee: "https://buy.stripe.com/14AaEX2Tw4fGgQhe828IU02"
-  },
-
-  // Replace this with your booking link (Calendly / Google appointment schedule / etc.)
-  bookingUrl: "https://calendar.app.google/GMchKdxTNZm9UJVS6",
-
-  // Support emails
-  supportEmails: ["mishal.almoqdad@gmail.com", "colibri.co.140@gmail.com"]
+const LINKS = {
+  book: "https://calendar.app.google/GMchKdxTNZm9UJVS6",
+  subscribe: "https://buy.stripe.com/cNi6oH3XA13u6bD8NI8IU01",
+  setup: "https://buy.stripe.com/14AaEX2Tw4fGgQhe828IU02"
 };
 
-function $(sel, root=document){ return root.querySelector(sel); }
-function $all(sel, root=document){ return Array.from(root.querySelectorAll(sel)); }
+function $(sel, root=document) { return root.querySelector(sel); }
+function $all(sel, root=document) { return Array.from(root.querySelectorAll(sel)); }
 
-function setActiveNav(){
-  const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-  const allLinks = $all('a[data-nav]');
-  allLinks.forEach(a=>{
-    const href = (a.getAttribute("href") || "").toLowerCase();
-    const isActive = href === path || (path === "" && href === "index.html");
-    a.classList.toggle("active", isActive);
+function setActiveNav() {
+  const hash = window.location.hash || "#home";
+  $all('.links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === hash);
+  });
+  $all('.mobile .stack a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === hash);
   });
 }
 
-function setupMobileMenu(){
-  const btn = $("#hamburger");
-  const menu = $("#mobilemenu");
-  if(!btn || !menu) return;
-
-  btn.addEventListener("click", ()=>{
-    menu.classList.toggle("hidden");
-    btn.setAttribute("aria-expanded", menu.classList.contains("hidden") ? "false" : "true");
-  });
-
-  // close on navigation
-  $all("#mobilemenu a").forEach(a=>{
-    a.addEventListener("click", ()=> menu.classList.add("hidden"));
-  });
+function toggleMobile() {
+  const m = $('#mobileMenu');
+  if (!m) return;
+  m.style.display = (m.style.display === 'block') ? 'none' : 'block';
 }
 
-function wireStripeButtons(){
-  $all("[data-stripe-link]").forEach(btn=>{
-    btn.addEventListener("click", (e)=>{
-      const key = btn.getAttribute("data-stripe-link");
-      const url = AssistioConfig.stripe[key];
-      if(!url || url.includes("REPLACE_")){
-        e.preventDefault();
-        alert("Stripe link not configured yet. Open scripts.js and replace the Stripe Payment Links in AssistioConfig.");
-        return;
-      }
-      window.location.href = url;
+function bindButtons() {
+  $all('[data-action="book"]').forEach(btn => btn.addEventListener('click', () => window.open(LINKS.book, '_blank', 'noopener')));
+  $all('[data-action="subscribe"]').forEach(btn => btn.addEventListener('click', () => window.open(LINKS.subscribe, '_blank', 'noopener')));
+  $all('[data-action="setup"]').forEach(btn => btn.addEventListener('click', () => window.open(LINKS.setup, '_blank', 'noopener')));
+}
+
+function bindFAQ() {
+  $all('.qa .q').forEach(q => {
+    q.addEventListener('click', () => {
+      const qa = q.closest('.qa');
+      const open = qa.classList.contains('open');
+      $all('.qa').forEach(x => x.classList.remove('open'));
+      if (!open) qa.classList.add('open');
     });
   });
 }
 
-function wireBookingButtons(){
-  $all("[data-booking]").forEach(btn=>{
-    btn.addEventListener("click", (e)=>{
-      const url = AssistioConfig.bookingUrl;
-      if(!url || url.includes("REPLACE_")){
-        e.preventDefault();
-        alert("Booking link not configured yet. Open scripts.js and replace AssistioConfig.bookingUrl.");
-        return;
-      }
-      window.open(url, "_blank", "noopener");
-    });
-  });
+function toast(msg) {
+  const t = document.createElement('div');
+  t.textContent = msg;
+  t.style.position='fixed';
+  t.style.left='50%';
+  t.style.bottom='28px';
+  t.style.transform='translateX(-50%)';
+  t.style.padding='10px 12px';
+  t.style.border='1px solid rgba(255,255,255,.12)';
+  t.style.background='rgba(10,12,18,.75)';
+  t.style.backdropFilter='blur(10px)';
+  t.style.borderRadius='12px';
+  t.style.color='rgba(234,240,255,.9)';
+  t.style.fontWeight='700';
+  t.style.zIndex='9999';
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 900);
 }
 
-function wireCopyButtons(){
-  $all("[data-copy]").forEach(btn=>{
-    btn.addEventListener("click", async ()=>{
-      const text = btn.getAttribute("data-copy") || "";
-      try{
-        await navigator.clipboard.writeText(text);
-        btn.textContent = "Copied";
-        setTimeout(()=> btn.textContent = "Copy", 1200);
-      }catch{
-        alert("Copy failed. You can manually copy: " + text);
-      }
-    });
-  });
-}
-
-function mailtoCompose({subject, body, to}){
-  const recipients = (to && to.length) ? to : AssistioConfig.supportEmails;
-  const s = encodeURIComponent(subject || "Assistio request");
-  const b = encodeURIComponent(body || "");
-  return `mailto:${recipients.join(",")}?subject=${s}&body=${b}`;
-}
-
-function wireMailtoForms(){
-  // Contact form
-  const cForm = $("#contactForm");
-  if(cForm){
-    cForm.addEventListener("submit", (e)=>{
-      e.preventDefault();
-      const name = $("#c_name")?.value?.trim() || "";
-      const email = $("#c_email")?.value?.trim() || "";
-      const company = $("#c_company")?.value?.trim() || "";
-      const msg = $("#c_message")?.value?.trim() || "";
-
-      const body =
-`Name: ${name}
-Email: ${email}
-Company: ${company}
-
-Message:
-${msg}
-`;
-      window.location.href = mailtoCompose({subject: "Assistio — Contact request", body});
-    });
+function copyText(text) {
+  if (!navigator.clipboard) {
+    toast('Copy not supported');
+    return;
   }
+  navigator.clipboard.writeText(text).then(() => toast('Copied'));
+}
 
-  // FAQ question submit
-  const qForm = $("#faqForm");
-  if(qForm){
-    qForm.addEventListener("submit", (e)=>{
-      e.preventDefault();
-      const name = $("#q_name")?.value?.trim() || "";
-      const email = $("#q_email")?.value?.trim() || "";
-      const question = $("#q_question")?.value?.trim() || "";
-
-      const body =
-`Name: ${name}
-Email: ${email}
-
-Question:
-${question}
-`;
-      window.location.href = mailtoCompose({subject: "Assistio — FAQ question", body});
-    });
-  }
-
-  // Login / Signup forms (static)
-  const authForms = $all("[data-auth-form]");
-  authForms.forEach(form=>{
-    form.addEventListener("submit", (e)=>{
-      e.preventDefault();
-      const email = form.querySelector("input[type='email']")?.value?.trim() || "";
-      const body =
-`Please enable portal access.
-
-Email: ${email}
-
-Context:
-- I am an active customer (or I want to become one).
-- Please send me the access instructions.
-`;
-      window.location.href = mailtoCompose({subject: "Assistio — Portal access request", body});
+function bindCopy() {
+  $all('[data-copy]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      copyText(btn.getAttribute('data-copy'));
     });
   });
 }
 
-function setYear(){
-  const y = new Date().getFullYear();
-  $all("[data-year]").forEach(el=> el.textContent = y);
+function bindContactForm() {
+  const form = $('#contactForm');
+  if (!form) return;
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = $('#c_name').value.trim();
+    const email = $('#c_email').value.trim();
+    const msg = $('#c_msg').value.trim();
+    const subject = encodeURIComponent('Assistio inquiry');
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${msg}\n\nBooking: https://calendar.app.google/GMchKdxTNZm9UJVS6`);
+    window.location.href = `mailto:mishal.almoqdad@gmail.com?subject=${subject}&body=${body}`;
+  });
 }
 
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = $('#hamburger');
+  if (burger) burger.addEventListener('click', toggleMobile);
+  window.addEventListener('hashchange', setActiveNav);
   setActiveNav();
-  setupMobileMenu();
-  wireStripeButtons();
-  wireBookingButtons();
-  wireCopyButtons();
-  wireMailtoForms();
-  setYear();
+  bindButtons();
+  bindFAQ();
+  bindCopy();
+  bindContactForm();
 });
