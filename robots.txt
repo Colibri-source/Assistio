@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://colibri-source.github.io/Assistio/sitemap.xml
