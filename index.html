@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html data-lang="en" data-theme="dark" dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Assistio — AI Booking &amp; Customer Support Automation</title>
+<meta content="Assistio sets up an AI booking + support workflow across web chat, WhatsApp, Instagram, Facebook, and email. Consistent, controlled replies with routing and handoff—built for operations." name="description"/>
+<meta content="index,follow" name="robots"/>
+<meta content="#070b14" name="theme-color"/>
+<link href="https://assistio.co/" rel="canonical"/>
+<meta content="Assistio — AI Booking &amp; Customer Support Automation" property="og:title"/>
+<meta content="Turn messages into booked appointments. AI replies, qualification, routing, and human handoff across your channels." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://assistio.co/" property="og:url"/>
+<meta content="https://assistio.co/og.png" property="og:image"/>
+<link href="./favicon-32x32.png" rel="icon" type="image/png+xml"/>
+<link href="./apple-touch-icon.png" rel="apple-touch-icon"/>
+<link as="image" href="./og.png" rel="preload"/>
+<link href="./styles.css?v=13" rel="stylesheet"/>
+<script defer src="./scripts.js?v=13"></script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "name":"Assistio",
+      "url":"https://assistio.co/",
+      "email":["hello@assistio.co","sales@assistio.co","support@assistio.co"],
+      "sameAs":[
+        "https://www.instagram.com/assistio.io/",
+        "https://www.facebook.com/profile.php?id=61585236956670",
+        "https://x.com/Assistio_io",
+        "https://www.tiktok.com/@assistio.io"
+      ]
+    },
+    {
+      "@type":"WebSite",
+      "name":"Assistio",
+      "url":"https://assistio.co/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<aside aria-label="Social media links" class="floating-social">
+<a aria-label="Instagram" class="social-btn social-btn-sm" href="https://www.instagram.com/assistio.io/" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"></path></svg></a>
+<a aria-label="Facebook" class="social-btn social-btn-sm" href="https://www.facebook.com/profile.php?id=61585236956670" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.9.2-1.5 1.5-1.5h1.6V5c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.6V11H7v3h2.4v8h4.1Z"></path></svg></a>
+<a aria-label="X" class="social-btn social-btn-sm" href="https://x.com/Assistio_io" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H2l7.3-8.4L1 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"></path></svg></a>
+<a aria-label="Tiktok" class="social-btn social-btn-sm" href="https://www.tiktok.com/@assistio.io" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 2c.6 2.9 2.6 4.7 5 4.9v3.1c-2-.1-3.8-.7-5-1.7V15c0 3.7-3 6.7-6.7 6.7S2.6 18.7 2.6 15s3-6.7 6.7-6.7c.4 0 .8 0 1.2.1v3.5c-.4-.2-.8-.3-1.2-.3-1.8 0-3.3 1.5-3.3 3.3s1.5 3.3 3.3 3.3 3.3-1.5 3.3-3.3V2h3.2Z"></path></svg></a>
+</aside>
+<header class="site-header is-visible" data-header="">
+<div class="container header-inner">
+<a aria-label="Assistio home" class="brand" href="./index.html#top">
+<img alt="Assistio logo" class="brand-logo" height="40" src="./logo.png" width="40"/>
+<span class="brand-text">
+<span class="brand-name">ASSISTIO</span>
+<span class="brand-tag" data-i18n="brand_tag">AI booking &amp; support</span>
+</span>
+</a>
+<nav aria-label="Primary navigation" class="nav">
+<button aria-controls="nav-menu" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only" data-i18n="nav_handle">Menu</span>
+<span aria-hidden="true" class="nav-toggle-bars"></span>
+</button>
+<div class="nav-menu" data-nav-menu="" id="nav-menu">
+<a class="nav-link" data-i18n="nav_home" data-navlink="" href="./index.html#top">Home</a>
+<a class="nav-link" data-i18n="nav_features" data-navlink="" href="./index.html#features">Features</a>
+<a class="nav-link" data-i18n="nav_how" data-navlink="" href="./index.html#how">How it works</a>
+<a class="nav-link" data-i18n="nav_pricing" data-navlink="" href="./index.html#pricing">Pricing</a>
+<a class="nav-link" data-i18n="nav_faq" data-navlink="" href="./index.html#faq">FAQ</a>
+<a class="nav-link" data-i18n="nav_contact" data-navlink="" href="./index.html#contact">Contact</a>
+<div class="nav-divider"></div>
+<a class="nav-link nav-link-muted" data-i18n="nav_privacy" href="./privacy.html">Privacy</a>
+<a class="nav-link nav-link-muted" data-i18n="nav_terms" href="./terms.html">Terms</a>
+</div>
+</nav>
+<div class="header-right">
+<button aria-label="Toggle theme" class="theme-toggle" data-theme-toggle="" type="button">
+<span aria-hidden="true" class="theme-icon"></span>
+<span class="theme-text" data-i18n="theme">Theme</span>
+</button>
+<div class="lang-dd" data-lang-dd="">
+<button aria-expanded="false" aria-haspopup="listbox" class="lang-dd-btn" type="button">
+<span class="lang-dd-label" data-i18n="lang_fab_label">Language</span>
+<span class="lang-dd-value" data-lang-current="">EN</span>
+<span aria-hidden="true" class="lang-dd-chev"></span>
+</button>
+<div aria-label="Language" class="lang-dd-menu" role="listbox">
+<button class="lang-dd-item" data-lang="en" role="option" type="button">EN</button>
+<button class="lang-dd-item" data-lang="ro" role="option" type="button">RO</button>
+<button class="lang-dd-item" data-lang="ar" role="option" type="button">AR</button>
+</div>
+<select aria-label="Language" class="sr-only lang-select" data-lang-select="">
+<option value="en">EN</option>
+<option value="ro">RO</option>
+<option value="ar">AR</option>
+</select>
+</div>
+<a class="btn btn-primary header-cta" data-booking="" data-i18n="cta_book" href="https://calendar.app.google/buBm1A7rWTKY1xAi9" rel="noopener" target="_blank">Book a demo call</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="hero section" id="top">
+<div class="container hero-centered">
+<div class="hero-copy hero-copy-center">
+<div class="pill" data-i18n="pill" data-reveal="" role="note">14‑day free trial • AI booking &amp; support • Multi‑channel</div>
+<h1 class="hero-title" data-i18n="h1" data-reveal="">Turn messages into booked appointments — automatically.</h1>
+<p class="lead" data-i18n="lead" data-reveal="">
+            Assistio sets up a controlled AI agent trained on your services, pricing, and policies. It replies fast, qualifies leads, and routes or books via your calendar—without sacrificing brand tone.
+          </p>
+<div class="hero-cta" data-reveal="">
+<a class="btn btn-primary" data-booking="" data-i18n="cta_book" href="https://calendar.app.google/buBm1A7rWTKY1xAi9" rel="noopener" target="_blank">Book a demo call</a>
+<a class="btn btn-link" data-i18n="cta_pricing" href="#pricing">View pricing</a>
+<div class="trial-inline" data-i18n="trial_cap">Free 14-day trial included (500 messages cap)</div>
+</div>
+<dl aria-label="Summary" class="hero-kpis" data-reveal="">
+<div class="kpi">
+<dt data-i18n="kpi1_dt">AI edge</dt>
+<dd data-i18n="kpi1_dd">Consistent replies with guardrails + human handoff</dd>
+</div>
+<div class="kpi">
+<dt data-i18n="kpi2_dt">Booking</dt>
+<dd data-i18n="kpi2_dd">Qualification → calendar booking (Google Calendar for now)</dd>
+</div>
+<div class="kpi">
+<dt data-i18n="kpi3_dt">Channels</dt>
+<dd data-i18n="kpi3_dd">Web chat + the main messaging channels (subject to approvals)</dd>
+</div>
+</dl>
+<p class="fineprint" data-i18n="hero_note" data-reveal="">Note: WhatsApp/Meta channels may require approvals and may have platform fees. We guide you through setup.</p>
+</div>
+</div>
+</section>
+<style>
+  /* Add spacing between feature cards */
+  .grid-3 .card {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+</style>
+<section class="section" id="features">
+<div class="container">
+<header class="section-head">
+<div>
+<h2 data-i18n="features_h2" data-reveal="">Features</h2>
+<p data-i18n="features_p" data-reveal="">Designed for booking-heavy operations and high message volume—without chaotic support.</p>
+</div>
+</header>
+<div class="grid-3">
+<article class="card" data-reveal="">
+<div aria-hidden="true" class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"></path><path d="M5 21a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</div>
+<h3 data-i18n="feat1_h3">AI agent with guardrails</h3>
+<p class="card-sub" data-i18n="feat1_p">Controlled, consistent replies—built around your policies and tone.</p>
+<ul class="bullets">
+<li data-i18n="feat1_li1">Knowledge base (FAQs, services, pricing)</li>
+<li data-i18n="feat1_li2">Confidence rules + escalation to a human</li>
+<li data-i18n="feat1_li3">No risky “hallucination” positioning</li>
+</ul>
+</article>
+<article class="card" data-reveal="">
+<div aria-hidden="true" class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v2h18V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7Z"></path><path d="M21 10H3v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V10Zm-4 4h-3v3h-2v-3H9v-2h3V9h2v3h3v2Z"></path></svg>
+</div>
+<h3 data-i18n="feat2_h3">Booking-first flow</h3>
+<p class="card-sub" data-i18n="feat2_p">Qualification → scheduling → confirmation, with minimal friction.</p>
+<ul class="bullets">
+<li data-i18n="feat2_li1">Collect the right details for the booking</li>
+<li data-i18n="feat2_li2">Route to Google Calendar link (MVP)</li>
+<li data-i18n="feat2_li3">Fallback: handoff to your team</li>
+</ul>
+</article>
+<article class="card" data-reveal="">
+<div aria-hidden="true" class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="M8 10h8M8 14h6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</div>
+<h3 data-i18n="feat3_h3">Multi-channel intake</h3>
+<p class="card-sub" data-i18n="feat3_p">Handle inbound messages where customers already are.</p>
+<ul class="bullets">
+<li data-i18n="feat3_li1">Website chat widget</li>
+<li data-i18n="feat3_li2">Instagram/Facebook messaging (Meta approval)</li>
+<li data-i18n="feat3_li3">WhatsApp + Email (availability varies)</li>
+</ul>
+</article>
+<article class="card" data-reveal="">
+<div aria-hidden="true" class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"></path><path d="M10 7h4M7 10v4M17 10v4M10 17h4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</div>
+<h3 data-i18n="feat4_h3">Routing &amp; handoff</h3>
+<p class="card-sub" data-i18n="feat4_p">The right message reaches the right owner, fast.</p>
+<ul class="bullets">
+<li data-i18n="feat4_li1">Routing by topic, urgency, language, or hours</li>
+<li data-i18n="feat4_li2">Owners per category (sales/support/etc.)</li>
+<li data-i18n="feat4_li3">Escalation when a human should take over</li>
+</ul>
+</article>
+<article class="card" data-reveal="">
+<div aria-hidden="true" class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M4 19V5"></path><path d="M4 19h16"></path><path d="M8 15l3-3 3 2 4-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 data-i18n="feat5_h3">Operational intelligence</h3>
+<p class="card-sub" data-i18n="feat5_p">Reduce noise and surface what matters for the business.</p>
+<ul class="bullets">
+<li data-i18n="feat5_li1">Common intents + top questions</li>
+<li data-i18n="feat5_li2">Lead quality signals (basic)</li>
+<li data-i18n="feat5_li3">Iteration loop: improve scripts weekly</li>
+</ul>
+</article>
+<article class="card" data-reveal="">
+<div aria-hidden="true" class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M12 2l7 4v6c0 5-3 9-7 10C8 21 5 17 5 12V6l7-4Z"></path><path d="M9 12l2 2 4-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 data-i18n="feat6_h3">Safer by design</h3>
+<p class="card-sub" data-i18n="feat6_p">Built to avoid compliance trouble and overpromising.</p>
+<ul class="bullets">
+<li data-i18n="feat6_li1">Conservative claims and disclaimers</li>
+<li data-i18n="feat6_li2">Clinic-friendly: inquiry handling, not medical advice</li>
+<li data-i18n="feat6_li3">Data minimization prompts</li>
+</ul>
+</article>
+</div>
+<div class="feature-highlight" data-reveal="">
+<div class="feature-highlight-title" data-i18n="book_h3">Appointment booking</div>
+<div class="feature-highlight-text" data-i18n="book_p">Collect the right details, confirm intent, and route to a booking link or your team—without breaking your flow.</div>
+</div>
+</div>
+</section>
+<section class="section section-muted" id="how">
+<div class="container">
+<header class="section-head">
+<div>
+<h2 data-i18n="how_h2" data-reveal="">How it works</h2>
+<p data-i18n="how_p" data-reveal="">Fast onboarding, clear scope, and a workflow your team can actually run.</p>
+</div>
+</header>
+<div aria-label="Process steps" class="timeline">
+<div class="step" data-reveal="">
+<div aria-hidden="true" class="step-num">1</div>
+<div class="step-body">
+<h3 data-i18n="step1_h3">Share your requirements</h3>
+<p data-i18n="step1_p">Services, FAQs, pricing, tone, business hours, and who owns sales/support.</p>
+</div>
+</div>
+<div class="step" data-reveal="">
+<div aria-hidden="true" class="step-num">2</div>
+<div class="step-body">
+<h3 data-i18n="step2_h3">We build your AI knowledge base</h3>
+<p data-i18n="step2_p">We structure answers, qualification questions, and escalation rules.</p>
+</div>
+</div>
+<div class="step" data-reveal="">
+<div aria-hidden="true" class="step-num">3</div>
+<div class="step-body">
+<h3 data-i18n="step3_h3">Connect channels + booking</h3>
+<p data-i18n="step3_p">We install the website widget, connect available channels, and plug in your calendar link.</p>
+</div>
+</div>
+<div class="step" data-reveal="">
+<div aria-hidden="true" class="step-num">4</div>
+<div class="step-body">
+<h3 data-i18n="step4_h3">Go live + optimize</h3>
+<p data-i18n="step4_p">We launch, monitor early conversations, and refine weekly to improve booking rate and accuracy.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="pricing">
+<div class="container pricing-wide">
+<header class="section-head">
+<div>
+<h2 data-i18n="pricing_h2" data-reveal="">Pricing</h2>
+<p data-i18n="pricing_p" data-reveal="">Same core features across plans. Limits and support differ. Free 14‑day trial included.</p>
+</div>
+</header>
+<div class="pricing-meta" data-reveal="">
+<div class="meta-pill"><span data-i18n="setup_fee">Setup (one-time): $500</span></div>
+<div class="meta-pill meta-pill-trial"><span data-i18n="trial_cap">Trial: 14 days, up to 500 messages total</span></div>
+<div class="meta-pill"><span data-i18n="overage">Overage: $20 per extra 1,000 messages</span></div>
+</div>
+<div class="trial-banner" data-reveal="">
+<div class="trial-banner-left">
+<div class="badge badge-trial" data-i18n="trial_badge">Free 14‑day trial</div>
+<h3 class="trial-banner-title" data-i18n="trial_banner_title">Try Assistio free for 14 days</h3>
+<p class="trial-banner-text" data-i18n="trial_banner_text">Full access to the core workflow. Activate the trial on the onboarding/demo call (up to 500 messages total).</p>
+</div>
+<div class="trial-banner-right">
+<a class="btn btn-primary" data-booking="" data-i18n="cta_trial" href="https://calendar.app.google/buBm1A7rWTKY1xAi9" rel="noopener" target="_blank">Start 14‑day trial</a>
+<p class="trial-banner-foot" data-i18n="trial_banner_footer">Activated during the demo call.</p>
+</div>
+</div>
+<div class="pricing-grid">
+<article class="price-card" data-reveal="">
+<div class="price-card-top">
+<div>
+<h3 data-i18n="plan_basic_h3">Basic</h3>
+<p class="price-sub" data-i18n="plan_basic_sub">Assistio Pack — starter</p>
+<div class="trial-chip" data-i18n="trial_chip">14‑day free trial</div>
+</div>
+<div aria-label="Pricing" class="price-stack">
+<div class="price-main">
+<span class="price-amt">$150</span>
+<span class="price-unit" data-i18n="per_mo">USD / mo</span>
+</div>
+<div class="price-setup" data-i18n="msg_basic">Includes ~2,000 messages / month</div>
+</div>
+</div>
+<div class="price-card-body">
+<ul class="checklist">
+<li data-i18n="p_core1">AI agent + knowledge base</li>
+<li data-i18n="p_core2">Booking flow + routing + handoff</li>
+<li data-i18n="p_core3">EN/RO/AR support</li>
+<li data-i18n="p_core4">Basic reporting + iteration</li>
+</ul>
+<div class="price-ctas">
+<a class="btn btn-primary btn-block" data-booking="" data-i18n="cta_trial" href="https://calendar.app.google/buBm1A7rWTKY1xAi9" rel="noopener" target="_blank">Start 14‑day trial</a>
+<a class="btn btn-ghost btn-block" data-i18n="cta_contact" href="#contact">Contact us</a>
+</div>
+<p class="fineprint price-note" data-i18n="plan_note">After the call, we send a Stripe payment link for the setup fee.</p>
+</div>
+</article>
+<article class="price-card price-card-featured" data-reveal="">
+<div class="price-card-top">
+<div>
+<div class="badge" data-i18n="badge_popular">Most popular</div>
+<h3 data-i18n="plan_pro_h3">Pro</h3>
+<p class="price-sub" data-i18n="plan_pro_sub">Assistio Pack — higher volume</p>
+<div class="trial-chip" data-i18n="trial_chip">14‑day free trial</div>
+</div>
+<div aria-label="Pricing" class="price-stack">
+<div class="price-main">
+<span class="price-amt">$250</span>
+<span class="price-unit" data-i18n="per_mo">USD / mo</span>
+</div>
+<div class="price-setup" data-i18n="msg_pro">Includes ~6,000 messages / month</div>
+</div>
+</div>
+<div class="price-card-body">
+<ul class="checklist">
+<li data-i18n="p_core1">AI agent + knowledge base</li>
+<li data-i18n="p_core2">Booking flow + routing + handoff</li>
+<li data-i18n="p_pro1">Priority iterations</li>
+<li data-i18n="p_pro2">Expanded reporting</li>
+</ul>
+<div class="price-ctas">
+<a class="btn btn-primary btn-block" data-booking="" data-i18n="cta_trial" href="https://calendar.app.google/buBm1A7rWTKY1xAi9" rel="noopener" target="_blank">Start 14‑day trial</a>
+<a class="btn btn-ghost btn-block" data-i18n="cta_contact" href="#contact">Contact us</a>
+</div>
+<p class="fineprint price-note" data-i18n="plan_note2">If you exceed your included messages, we bill overages monthly.</p>
+</div>
+</article>
+<article class="price-card" data-reveal="">
+<div class="price-card-top">
+<div>
+<h3 data-i18n="plan_ent_h3">Enterprise</h3>
+<p class="price-sub" data-i18n="plan_ent_sub">Custom volume + requirements</p>
+<div class="trial-chip" data-i18n="trial_chip">14‑day free trial</div>
+</div>
+<div aria-label="Pricing" class="price-stack">
+<div class="price-main">
+<span class="price-amt" data-i18n="cta_contact">Contact us</span>
+</div>
+<div class="price-setup" data-i18n="msg_ent">Custom limits, SLA, and integrations</div>
+</div>
+</div>
+<div class="price-card-body">
+<ul class="checklist">
+<li data-i18n="p_ent1">Custom workflows + approvals</li>
+<li data-i18n="p_ent2">Dedicated onboarding &amp; SLA options</li>
+<li data-i18n="p_ent3">Security &amp; data handling review</li>
+<li data-i18n="p_ent4">Custom analytics</li>
+</ul>
+<div class="price-ctas">
+<a class="btn btn-primary btn-block" data-booking="" data-i18n="cta_book" href="https://calendar.app.google/buBm1A7rWTKY1xAi9" rel="noopener" target="_blank">Book a demo call</a>
+<a class="btn btn-ghost btn-block" data-i18n="cta_contact" href="#contact">Contact us</a>
+</div>
+<p class="fineprint price-note" data-i18n="whatsapp_note">WhatsApp/Meta fees and approvals may apply. We’ll confirm feasibility during onboarding.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-muted" id="faq">
+<div class="container">
+<header class="section-head">
+<div>
+<h2 data-i18n="faq_h2" data-reveal="">FAQ</h2>
+<p data-i18n="faq_p" data-reveal="">Technical, concrete answers—aligned with what we can deliver in the MVP.</p>
+</div>
+</header>
+<div aria-label="Frequently asked questions" class="faq" role="region">
+<details data-reveal="">
+<summary data-i18n="faq_q1">What do I get during the 14‑day trial?</summary>
+<div class="faq-body" data-i18n="faq_a1"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q2">Which channels are available today?</summary>
+<div class="faq-body" data-i18n="faq_a2"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q3">Do you automate booking?</summary>
+<div class="faq-body" data-i18n="faq_a3"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q4">How do you keep replies “controlled”?</summary>
+<div class="faq-body" data-i18n="faq_a4"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q5">Can you work with clinics without compliance risk?</summary>
+<div class="faq-body" data-i18n="faq_a5"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q6">How do message limits and overages work?</summary>
+<div class="faq-body" data-i18n="faq_a6"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q7">What data do you need from us?</summary>
+<div class="faq-body" data-i18n="faq_a7"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q8">How long does setup take?</summary>
+<div class="faq-body" data-i18n="faq_a8"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q9">Do you support multiple languages?</summary>
+<div class="faq-body" data-i18n="faq_a9"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q10">What security can you claim today?</summary>
+<div class="faq-body" data-i18n="faq_a10"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q11">Can we cancel anytime?</summary>
+<div class="faq-body" data-i18n="faq_a11"></div>
+</details>
+<details data-reveal="">
+<summary data-i18n="faq_q12">What is the onboarding process?</summary>
+<div class="faq-body" data-i18n="faq_a12"></div>
+</details>
+</div>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="container">
+<header class="section-head">
+<div>
+<h2 data-i18n="contact_h2" data-reveal="">Contact</h2>
+<p data-i18n="contact_p" data-reveal="">Start the trial or book a demo. If you prefer email, contact Sales or Support.</p>
+</div>
+</header>
+<div class="grid-2 contact-grid">
+<article class="card" data-reveal="">
+<h3 data-i18n="contact_direct">Direct contacts</h3>
+<div class="contact-row">
+<div>
+<div class="contact-name">sales@assistio.co</div>
+<div class="contact-meta" data-i18n="sales_label">Sales</div>
+</div>
+<button class="btn btn-small" data-copy="sales@assistio.co" data-i18n="copy" type="button">Copy</button>
+</div>
+<div class="contact-row">
+<div>
+<div class="contact-name">support@assistio.co</div>
+<div class="contact-meta" data-i18n="support_label">Support</div>
+</div>
+<button class="btn btn-small" data-copy="support@assistio.co" data-i18n="copy" type="button">Copy</button>
+</div>
+<div class="contact-row">
+<div>
+<div class="contact-name">hello@assistio.co</div>
+<div class="contact-meta" data-i18n="hello_label">General</div>
+</div>
+<button class="btn btn-small" data-copy="hello@assistio.co" data-i18n="copy" type="button">Copy</button>
+</div>
+<div class="contact-row">
+<div>
+<div class="contact-name">meshal.almoqdad@assistio.co</div>
+<div class="contact-meta">Meshal Almoqdad</div>
+</div>
+<button class="btn btn-small" data-copy="meshal.almoqdad@assistio.co" data-i18n="copy" type="button">Copy</button>
+</div>
+<div class="contact-row">
+<div>
+<div class="contact-name">ali.annamuhammedov@assistio.co</div>
+<div class="contact-meta">Ali Annamuhammedov</div>
+</div>
+<button class="btn btn-small" data-copy="ali.annamuhammedov@assistio.co" data-i18n="copy" type="button">Copy</button>
+</div>
+<div class="divider"></div>
+<div class="contact-row">
+<div>
+<div class="contact-name">+40 0729 501 787 <span class="muted">(Meshal — phone &amp; WhatsApp)</span></div>
+</div>
+<button class="btn btn-small" data-copy="+40 0729 501 787" data-i18n="copy" type="button">Copy</button>
+</div>
+<div class="contact-row">
+<div>
+<div class="contact-name">+993 63 818099 <span class="muted">(Ali — WhatsApp only)</span></div>
+</div>
+<button class="btn btn-small" data-copy="+993 63 818099" data-i18n="copy" type="button">Copy</button>
+</div>
+<div class="divider"></div>
+<a class="btn btn-primary btn-block" data-i18n="draft" data-mailto="call" href="#">Create email draft</a>
+<p class="fineprint" data-i18n="draft_hint">Opens a pre-filled draft so you can send it from your inbox.</p>
+<div class="divider"></div>
+<h4 class="mini-title" data-i18n="include_h4">What to include</h4>
+<ul class="bullets">
+<li data-i18n="include_li1">Your business and services</li>
+<li data-i18n="include_li2">Channels you want to connect</li>
+<li data-i18n="include_li3">Routing owners (sales/support/etc.)</li>
+<li data-i18n="include_li4">Booking link + qualification questions</li>
+</ul>
+</article>
+<article class="card" data-reveal="">
+<h3 data-i18n="send_msg">Send a message</h3>
+<form action="https://formspree.io/f/mpqqrzlb" class="form" id="contactForm" method="POST" novalidate="">
+<input name="_subject" type="hidden" value="New message from Assistio website"/>
+<input autocomplete="off" id="_gotcha" name="_gotcha" style="display:none" tabindex="-1" type="text"/>
+<div class="form-row">
+<label data-i18n="f_name" for="name">Name</label>
+<input autocomplete="name" id="name" name="name" required="" type="text"/>
+</div>
+<div class="form-row">
+<label data-i18n="f_email" for="email">Email</label>
+<input autocomplete="email" id="email" name="_replyto" required="" type="email"/>
+</div>
+<div class="form-row">
+<label data-i18n="f_company" for="company">Company (optional)</label>
+<input autocomplete="organization" id="company" name="company" type="text"/>
+</div>
+<div class="form-row">
+<label data-i18n="f_industry" for="industry">Industry</label>
+<div class="form-dd" data-form-dd="industry">
+<button aria-expanded="false" aria-haspopup="listbox" class="form-dd-btn" type="button">
+<span class="form-dd-value" data-dd-value="">Select…</span>
+<span aria-hidden="true" class="form-dd-chev"></span>
+</button>
+<div aria-label="Industry" class="form-dd-menu" role="listbox">
+<button class="form-dd-item" data-i18n="industry_select" data-value="" role="option" type="button">Select…</button>
+<button class="form-dd-item" data-i18n="industry_clinic" data-value="Clinic" role="option" type="button">Clinic</button>
+<button class="form-dd-item" data-i18n="industry_real_estate" data-value="Real estate" role="option" type="button">Real estate</button>
+<button class="form-dd-item" data-i18n="industry_gym" data-value="Gym" role="option" type="button">Gym</button>
+<button class="form-dd-item" data-i18n="industry_restaurant" data-value="Restaurant" role="option" type="button">Restaurant</button>
+<button class="form-dd-item" data-i18n="industry_other" data-value="Other" role="option" type="button">Other</button>
+</div>
+</div>
+<select class="sr-only industry-select" id="industry" name="industry">
+<option data-i18n="industry_any" value="">Select…</option>
+<option data-i18n="industry_clinic" value="clinic">Clinic</option>
+<option data-i18n="industry_real_estate" value="real_estate">Real estate</option>
+<option data-i18n="industry_gym" value="gym">Gym</option>
+<option data-i18n="industry_restaurant" value="restaurant">Restaurant</option>
+<option data-i18n="industry_other" value="other">Other</option>
+</select>
+</div>
+<div class="form-row">
+<label data-i18n="f_message" for="message">Message</label>
+<textarea data-i18n-placeholder="f_placeholder" id="message" name="message" placeholder="Tell us your business, channels, routing owners, and whether you need appointment booking." required="" rows="6"></textarea>
+</div>
+<div aria-hidden="true" class="hp">
+<label for="website">Website</label>
+<input autocomplete="off" id="website" name="website" tabindex="-1" type="text"/>
+</div>
+<button class="btn btn-primary btn-block" data-i18n="f_submit" type="submit">Send message</button>
+<div aria-live="polite" class="form-status" data-form-status="" role="status"></div>
+<p class="fineprint" data-i18n="f_disclaimer">By sending a message, you agree that we can reply to your email and use your details only to respond.</p>
+</form>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<div class="footer-left">
+<div class="footer-brand">Assistio</div>
+<div class="footer-text" data-i18n="footer_tag">AI booking &amp; customer support automation.</div>
+<div class="footer-text" data-i18n="footer_formation">Assistio — project in formation (legal registration pending).</div>
+<div class="footer-text"><span data-i18n="footer_support">Support</span>: support@assistio.co · <span data-i18n="footer_sales">Sales</span>: sales@assistio.co</div>
+<div class="footer-social">
+<div class="footer-social-label" data-i18n="footer_social">Social</div>
+<div class="social-icons">
+<a aria-label="Instagram" class="social-btn" href="https://www.instagram.com/assistio.io/" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"></path></svg></a>
+<a aria-label="Facebook" class="social-btn" href="https://www.facebook.com/profile.php?id=61585236956670" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.9.2-1.5 1.5-1.5h1.6V5c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.6V11H7v3h2.4v8h4.1Z"></path></svg></a>
+<a aria-label="X" class="social-btn" href="https://x.com/Assistio_io" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H2l7.3-8.4L1 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"></path></svg></a>
+<a aria-label="Tiktok" class="social-btn" href="https://www.tiktok.com/@assistio.io" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 2c.6 2.9 2.6 4.7 5 4.9v3.1c-2-.1-3.8-.7-5-1.7V15c0 3.7-3 6.7-6.7 6.7S2.6 18.7 2.6 15s3-6.7 6.7-6.7c.4 0 .8 0 1.2.1v3.5c-.4-.2-.8-.3-1.2-.3-1.8 0-3.3 1.5-3.3 3.3s1.5 3.3 3.3 3.3 3.3-1.5 3.3-3.3V2h3.2Z"></path></svg></a>
+</div>
+</div>
+</div>
+<nav aria-label="Footer navigation" class="footer-right">
+<a data-i18n="nav_features" href="#features">Features</a>
+<a data-i18n="nav_how" href="#how">How it works</a>
+<a data-i18n="nav_pricing" href="#pricing">Pricing</a>
+<a data-i18n="nav_faq" href="#faq">FAQ</a>
+<a data-i18n="nav_contact" href="#contact">Contact</a>
+<a data-i18n="nav_privacy" href="./privacy.html">Privacy</a>
+<a data-i18n="nav_terms" href="./terms.html">Terms</a>
+</nav>
+</div>
+<div class="container footer-bottom">
+<span>© 2026 Assistio. All rights reserved.</span>
+<a class="back-top" data-i18n="back_top" href="#top">Back to top</a>
+</div>
+</footer>
+<div aria-label="Primary action" class="mobile-cta" role="region">
+<a class="btn btn-primary btn-block" data-booking="" data-i18n="cta_trial" href="https://calendar.app.google/buBm1A7rWTKY1xAi9" rel="noopener" target="_blank">Start 14‑day trial</a>
+</div>
+</body>
+</html>
