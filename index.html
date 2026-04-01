@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assistio AI | Automate Customer Conversations and Close More Leads</title>
+  <meta
+    name="description"
+    content="Assistio AI automates WhatsApp, website, email, Instagram, and Facebook conversations so your business replies faster, captures more leads, and books more customers."
+  />
+  <meta name="theme-color" content="#08162f" />
+  <meta property="og:title" content="Assistio AI | Automate Customer Conversations and Close More Leads" />
+  <meta
+    property="og:description"
+    content="AI-powered WhatsApp, Website, and Email automation that replies instantly, captures leads, and helps book customers for you."
+  />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="./favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      try {
+        var storedTheme = localStorage.getItem("assistio_theme");
+        var storedLang = localStorage.getItem("assistio_lang");
+        var systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", storedTheme || (systemPrefersDark ? "dark" : "light"));
+        document.documentElement.lang = storedLang || "en";
+        document.documentElement.dir = storedLang === "ar" ? "rtl" : "ltr";
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "light");
+        document.documentElement.lang = "en";
+        document.documentElement.dir = "ltr";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=23" />
+  <script defer src="./scripts.js?v=17"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container">
+      <div class="header-shell">
+        <a class="brand" href="#top" aria-label="Assistio home">
+          <span class="brand-mark">
+            <img class="brand-logo" src="./logo.png" width="58" height="74" alt="Assistio logo" />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Assistio</span>
+            <span class="brand-tag" data-i18n="brand_tag">AI automation for lead capture and booking</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            data-nav-toggle
+          >
+            <span class="sr-only">Open menu</span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-menu" id="nav-menu" data-nav-menu>
+            <div class="nav-links">
+              <a class="nav-link" href="#product" data-nav-link="product" data-i18n="nav_product">Product</a>
+              <a class="nav-link" href="#pricing" data-nav-link="pricing" data-i18n="nav_pricing">Pricing</a>
+              <a class="nav-link" href="#how-it-works" data-nav-link="how-it-works" data-i18n="nav_how">How It Works</a>
+              <a class="nav-link" href="#contact" data-nav-link="contact" data-i18n="nav_contact">Contact Us</a>
+            </div>
+
+            <div class="nav-mobile-meta">
+              <div class="lang-switch mobile-lang-switch" aria-label="Language">
+                <button class="lang-button" type="button" data-lang="en">EN</button>
+                <button class="lang-button" type="button" data-lang="ro">RO</button>
+                <button class="lang-button" type="button" data-lang="ar">AR</button>
+              </div>
+            </div>
+
+            <div class="nav-mobile-actions">
+              <a class="btn btn-secondary btn-block" href="#contact" data-i18n="nav_contact">Contact Us</a>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+                Book a Demo
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch desktop-lang-switch" aria-label="Language">
+            <button class="lang-button" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="ro">RO</button>
+            <button class="lang-button" type="button" data-lang="ar">AR</button>
+          </div>
+
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Toggle color theme"
+            aria-pressed="false"
+          >
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.25"></circle>
+              <path d="M12 2.25v2.75"></path>
+              <path d="M12 19v2.75"></path>
+              <path d="M4.76 4.76l1.95 1.95"></path>
+              <path d="M17.29 17.29l1.95 1.95"></path>
+              <path d="M2.25 12H5"></path>
+              <path d="M19 12h2.75"></path>
+              <path d="M4.76 19.24l1.95-1.95"></path>
+              <path d="M17.29 6.71l1.95-1.95"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.25 14.19A8.72 8.72 0 0 1 9.81 3.75a8.98 8.98 0 1 0 10.44 10.44Z"></path>
+            </svg>
+          </button>
+          <a class="btn btn-secondary header-contact" href="#contact" data-i18n="nav_contact">Contact Us</a>
+          <a class="btn btn-primary header-cta" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+            Book a Demo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-overlay" data-nav-overlay hidden></div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow" data-reveal data-i18n="hero_eyebrow">Premium AI automation for revenue-first teams</div>
+          <h1 class="hero-title" data-reveal data-i18n="hero_title">Automate Your Customer Conversations and Close More Leads</h1>
+          <p class="hero-lead" data-reveal data-i18n="hero_lead">
+            AI-powered WhatsApp, Website, and Email automation that replies instantly, captures leads, and helps book customers for you.
+          </p>
+
+          <div class="hero-actions" data-reveal>
+            <a class="btn btn-primary" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+              Book a Demo
+            </a>
+            <a class="btn btn-ghost" href="#how-it-works" data-i18n="cta_how">See How It Works</a>
+          </div>
+
+          <p class="hero-trust-line" data-reveal data-i18n="hero_trust_line">Works 24/7 • No missed leads</p>
+
+          <div class="hero-assurance" data-reveal>
+            <span data-i18n="trust_1">No commitment required</span>
+            <span data-i18n="trust_2">Takes 30 seconds to book</span>
+            <span data-i18n="trust_3">Fast setup after approval</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="visual-shell">
+            <div class="visual-window-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong data-i18n="visual_window">Live conversation flow</strong>
+            </div>
+
+            <p class="visual-hint" data-i18n="visual_hint">Try a channel example to preview how the flow adapts.</p>
+
+            <div class="channel-strip" role="tablist" aria-label="Channel examples">
+              <button class="channel-pill is-active" type="button" role="tab" data-example-tab="whatsapp" data-i18n="tab_whatsapp" aria-selected="true">
+                WhatsApp
+              </button>
+              <button class="channel-pill" type="button" role="tab" data-example-tab="website" data-i18n="tab_website" aria-selected="false">
+                Website Chat
+              </button>
+              <button class="channel-pill" type="button" role="tab" data-example-tab="email" data-i18n="tab_email" aria-selected="false">
+                Email
+              </button>
+              <button class="channel-pill" type="button" role="tab" data-example-tab="instagram" data-i18n="tab_instagram" aria-selected="false">
+                Instagram
+              </button>
+            </div>
+
+            <div class="visual-grid">
+              <article class="conversation-card">
+                <span class="mini-label" data-i18n="example_incoming">Incoming lead</span>
+                <div class="chat-bubble is-user" data-example-user>
+                  Hi, I need faster replies for WhatsApp and our website so we can stop missing warm leads.
+                </div>
+                <div class="chat-bubble is-bot" data-example-bot>
+                  We can handle that. How many people need access, and should we send qualified leads straight to your booking link?
+                </div>
+
+                <div class="qualification-card">
+                  <div>
+                    <span class="mini-label" data-i18n="example_capture">Captured automatically</span>
+                    <strong data-example-capture>Team size: 4 users</strong>
+                  </div>
+                  <div>
+                    <span class="mini-label" data-i18n="example_next">Best next step</span>
+                    <strong data-example-next>Route to booked demo</strong>
+                  </div>
+                </div>
+              </article>
+
+              <div class="outcome-stack">
+                <article class="outcome-card">
+                  <span class="mini-label" data-i18n="example_auto">AI Auto Replies</span>
+                  <strong data-example-auto-title>Respond instantly across your key channels</strong>
+                  <p data-example-auto-copy>No manual lag while leads are still ready to act.</p>
+                </article>
+
+                <article class="outcome-card">
+                  <span class="mini-label" data-i18n="example_qualification">Lead Qualification</span>
+                  <strong data-example-qualification-title>Collect the details your team actually needs</strong>
+                  <p data-example-qualification-copy>Reduce back-and-forth and keep operators focused on real opportunities.</p>
+                </article>
+
+                <article class="journey-card">
+                  <span class="mini-label" data-i18n="example_journey">Booking-ready flow</span>
+                  <div class="journey-step">
+                    <span></span>
+                    <div>
+                      <strong data-i18n="journey_step_1_title">1. New lead</strong>
+                      <p data-example-step-1>Message received on the right channel.</p>
+                    </div>
+                  </div>
+                  <div class="journey-step">
+                    <span></span>
+                    <div>
+                      <strong data-i18n="journey_step_2_title">2. Qualified automatically</strong>
+                      <p data-example-step-2>Intent, details, and urgency captured in real time.</p>
+                    </div>
+                  </div>
+                  <div class="journey-step is-highlighted">
+                    <span></span>
+                    <div>
+                      <strong data-i18n="journey_step_3_title">3. Demo booked</strong>
+                      <p data-example-step-3>High-intent leads move straight to your next step.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip">
+      <div class="container proof-strip-shell">
+        <div class="proof-copy" data-reveal>
+          <span class="eyebrow eyebrow-inline" data-i18n="proof_eyebrow">Built for channel-first businesses</span>
+          <p data-i18n="proof_copy">One reliable system across the channels your customers already use.</p>
+        </div>
+
+        <div class="proof-pills" data-reveal>
+          <span data-i18n="tab_whatsapp">WhatsApp</span>
+          <span data-i18n="tab_website">Website Chat</span>
+          <span data-i18n="tab_email">Email</span>
+          <span data-i18n="tab_instagram">Instagram</span>
+          <span data-i18n="proof_facebook">Facebook</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="product" data-section="product">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="eyebrow" data-i18n="problem_eyebrow">Problem to solution</span>
+          <h2 class="section-title" data-i18n="problem_title">Missed leads usually happen before your team even gets a fair chance to respond.</h2>
+          <p class="section-lead" data-i18n="problem_lead">
+            Slow replies, disconnected channels, and repetitive manual work create friction long before a customer books. Assistio fixes that with one clear automation path.
+          </p>
+        </div>
+
+        <div class="problem-solution-grid">
+          <article class="story-card is-problem" data-reveal>
+            <span class="card-kicker" data-i18n="problem_kicker">What is happening today</span>
+            <h3 data-i18n="problem_card_title">Leads slip between channels and momentum dies fast.</h3>
+            <ul class="check-list is-problem-list">
+              <li data-i18n="problem_1">Messages arrive on WhatsApp, website chat, and email with no single response flow.</li>
+              <li data-i18n="problem_2">Teams repeat the same qualification questions instead of moving quickly to action.</li>
+              <li data-i18n="problem_3">High-intent visitors wait too long, leave, or never make it to booking.</li>
+              <li data-i18n="problem_4">Operators lose time switching between tools, tabs, and inboxes.</li>
+            </ul>
+          </article>
+
+          <article class="story-card is-solution" data-reveal>
+            <span class="card-kicker" data-i18n="solution_kicker">What Assistio changes</span>
+            <h3 data-i18n="solution_card_title">Every inbound message gets a faster, cleaner path to conversion.</h3>
+            <ul class="check-list">
+              <li data-i18n="solution_1">Capture leads instantly and respond with the right message at the right time.</li>
+              <li data-i18n="solution_2">Qualify conversations automatically before a human ever needs to step in.</li>
+              <li data-i18n="solution_3">Route serious leads to booking, handoff, or follow-up without delay.</li>
+              <li data-i18n="solution_4">Keep communication consistent across channels with less manual effort.</li>
+            </ul>
+
+            <div class="story-note">
+              <strong data-i18n="solution_note_title">Book a Demo</strong>
+              <p data-i18n="solution_note_copy">No commitment required. We will show you the best setup for your business and the fastest launch path.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="eyebrow" data-i18n="features_eyebrow">Features</span>
+          <h2 class="section-title" data-i18n="features_title">Everything needed to turn inbound conversations into booked clients.</h2>
+          <p class="section-lead" data-i18n="features_lead">
+            Assistio is designed to reduce friction, protect response speed, and keep every serious lead moving forward.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">AI</span>
+            <h3 data-i18n="feature_1_title">AI Auto Replies</h3>
+            <p data-i18n="feature_1_copy">Reply instantly so customers never wait for your team to catch up.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">MC</span>
+            <h3 data-i18n="feature_2_title">Multi-channel Support</h3>
+            <p data-i18n="feature_2_copy">Manage WhatsApp, website chat, email, Instagram, and Facebook in one setup.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">LQ</span>
+            <h3 data-i18n="feature_3_title">Lead Capture and Qualification</h3>
+            <p data-i18n="feature_3_copy">Collect key details, identify intent, and prepare your team for the right next move.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">BK</span>
+            <h3 data-i18n="feature_4_title">Booking Automation</h3>
+            <p data-i18n="feature_4_copy">Move high-intent conversations directly toward your booking flow without extra steps.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">HH</span>
+            <h3 data-i18n="feature_5_title">Human Handoff</h3>
+            <p data-i18n="feature_5_copy">Escalate to a real person when nuance matters, with the conversation context already attached.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">ML</span>
+            <h3 data-i18n="feature_6_title">Multi-language Support</h3>
+            <p data-i18n="feature_6_copy">Serve more customers clearly across the languages your business needs to support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contrast" id="how-it-works" data-section="how-it-works">
+      <div class="container">
+        <div class="section-heading section-heading-centered" data-reveal>
+          <span class="eyebrow" data-i18n="how_eyebrow">How It Works</span>
+          <h2 class="section-title" data-i18n="how_title">Simple to understand. Easy to adopt. Built to book faster.</h2>
+          <p class="section-lead" data-i18n="how_lead">
+            The setup is designed to feel low-risk from the first conversation. You connect the right channels, the AI handles the routine work, and your team gets cleaner opportunities.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card" data-reveal>
+            <span class="step-number">01</span>
+            <h3 data-i18n="step_1_title">Connect your channels</h3>
+            <p data-i18n="step_1_copy">Bring your key entry points together so replies, qualification, and follow-up start from one system.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span class="step-number">02</span>
+            <h3 data-i18n="step_2_title">AI handles conversations</h3>
+            <p data-i18n="step_2_copy">Assistio replies instantly, captures lead details, and routes each conversation based on your process.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span class="step-number">03</span>
+            <h3 data-i18n="step_3_title">You get booked clients</h3>
+            <p data-i18n="step_3_copy">Qualified leads move toward booking faster while your team spends time where human attention matters most.</p>
+          </article>
+        </div>
+
+        <div class="demo-panel" data-reveal>
+          <div>
+            <span class="eyebrow eyebrow-inline" data-i18n="demo_eyebrow">What happens on the demo</span>
+            <h3 data-i18n="demo_title">We show the best setup for your business before you commit.</h3>
+            <p data-i18n="demo_copy">
+              You will see the recommended channel setup, qualification flow, and booking path live so the next step feels clear and low-friction.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+            Book a Demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing" data-section="pricing">
+      <div class="container">
+        <div class="section-heading section-heading-centered" data-reveal>
+          <span class="eyebrow" data-i18n="pricing_eyebrow">Pricing</span>
+          <h2 class="section-title" data-i18n="pricing_title">Clear plans built to launch fast and scale cleanly.</h2>
+          <p class="section-lead" data-i18n="pricing_lead">
+            Each plan is designed to stay easy to compare, easy to buy, and easy to act on. Every card leads to the same next step: Book a Demo.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card" data-reveal>
+            <span class="plan-badge">Launch</span>
+            <h3>Launch</h3>
+            <p class="plan-price"><span>EUR 149</span>/mo</p>
+            <p class="plan-setup">+ EUR 199 setup</p>
+            <ul class="plan-list">
+              <li>WhatsApp automation</li>
+              <li>1 extra channel (website or email)</li>
+              <li>1 automation flow</li>
+              <li>1 language</li>
+              <li>Up to 3 users</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+              Book a Demo
+            </a>
+          </article>
+          <article class="pricing-card is-featured" data-reveal>
+            <span class="plan-badge is-featured-badge" data-i18n="pricing_featured_badge">Recommended</span>
+            <h3>Growth</h3>
+            <p class="plan-price"><span>EUR 199</span>/mo</p>
+            <p class="plan-setup">+ EUR 299 setup</p>
+            <ul class="plan-list">
+              <li>WhatsApp + 2 channels</li>
+              <li>2 automation flows</li>
+              <li>Lead tracking (Google Sheets)</li>
+              <li>KPI summary</li>
+              <li>Up to 5 users</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+              Book a Demo
+            </a>
+          </article>
+
+          <article class="pricing-card" data-reveal>
+            <span class="plan-badge">Omni</span>
+            <h3>Omni</h3>
+            <p class="plan-price"><span>EUR 279</span>/mo</p>
+            <p class="plan-setup">+ EUR 349 setup</p>
+            <ul class="plan-list">
+              <li>WhatsApp + Email + Instagram + Facebook</li>
+              <li>3 automation flows</li>
+              <li>AI to human routing</li>
+              <li>2 languages</li>
+              <li>Up to 10 users</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+              Book a Demo
+            </a>
+          </article>
+        </div>
+
+        <div class="pricing-note" data-reveal>
+          <p data-i18n="pricing_note">No commitment required. It takes 30 seconds to book, and we will recommend the best plan for your business on the demo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="addons-shell" data-reveal>
+          <div class="section-heading section-heading-left">
+            <span class="eyebrow" data-i18n="addons_eyebrow">Add-ons</span>
+            <h2 class="section-title section-title-small" data-i18n="addons_title">Add-ons</h2>
+            <p class="section-lead" data-i18n="addons_lead">Keep extensions simple and easy to understand as your setup grows.</p>
+          </div>
+
+          <div class="addons-grid">
+            <article class="addon-card">
+              <h3 data-i18n="addon_1_title">Extra channel</h3>
+              <p class="addon-price">EUR 20-EUR 50/mo</p>
+            </article>
+            <article class="addon-card">
+              <h3 data-i18n="addon_2_title">Extra automation</h3>
+              <p class="addon-price">EUR 30-EUR 70</p>
+            </article>
+            <article class="addon-card">
+              <h3 data-i18n="addon_3_title">Extra language</h3>
+              <p class="addon-price">EUR 20-EUR 40</p>
+            </article>
+            <article class="addon-card">
+              <h3 data-i18n="addon_4_title">Advanced analytics</h3>
+              <p class="addon-price" data-i18n="addon_4_price">Coming soon</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta-section">
+      <div class="container">
+        <div class="final-cta-card" data-reveal>
+          <span class="eyebrow eyebrow-inline" data-i18n="final_eyebrow">Ready to automate your business?</span>
+          <h2 data-i18n="final_title">Ready to automate your business?</h2>
+          <p data-i18n="final_copy">
+            Book a Demo to see the best Assistio setup for your channels, your lead flow, and your booking process.
+          </p>
+
+          <div class="final-cta-actions">
+            <a class="btn btn-primary" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+              Book a Demo
+            </a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="nav_contact">Contact Us</a>
+          </div>
+
+          <p class="final-cta-support" data-i18n="final_support">No commitment required. Fast to book. Easy to get started.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" data-section="contact">
+      <div class="container">
+        <div class="contact-shell" data-reveal>
+          <div class="contact-copy">
+            <span class="eyebrow eyebrow-inline" data-i18n="contact_eyebrow">Contact Us</span>
+            <h2 class="section-title" data-i18n="contact_title">Need a custom setup or want to ask a question first?</h2>
+            <p class="section-lead" data-i18n="contact_lead">
+              Send us a quick message and we will help you choose the right channels, flows, and launch plan for your business.
+            </p>
+
+            <div class="contact-info-grid">
+              <article class="contact-info-card founder-card">
+                <span class="mini-label">Founder</span>
+                <h3>Meshal Almoqdad</h3>
+                <a class="contact-phone" href="tel:+400729501787">+40 0729501787</a>
+                <div class="contact-email-row">
+                  <a class="contact-email-link" href="mailto:meshal.almoqdad@assistio.co">meshal.almoqdad@assistio.co</a>
+                  <button
+                    class="copy-button"
+                    type="button"
+                    data-copy-button
+                    data-copy-value="meshal.almoqdad@assistio.co"
+                    data-copy-default="Copy"
+                    data-copy-success="Copied"
+                    aria-label="Copy Meshal email"
+                  >
+                    Copy
+                  </button>
+                </div>
+              </article>
+              <article class="contact-info-card founder-card">
+                <span class="mini-label">Founder</span>
+                <h3>Ali Annamuhammedov</h3>
+                <a class="contact-phone" href="tel:+8615921221261">+86 159 2122 1261</a>
+                <div class="contact-email-row">
+                  <a class="contact-email-link" href="mailto:ali.annamuhammedov@assistio.co">ali.annamuhammedov@assistio.co</a>
+                  <button
+                    class="copy-button"
+                    type="button"
+                    data-copy-button
+                    data-copy-value="ali.annamuhammedov@assistio.co"
+                    data-copy-default="Copy"
+                    data-copy-success="Copied"
+                    aria-label="Copy Ali email"
+                  >
+                    Copy
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <div class="contact-form-head">
+              <h3 data-i18n="contact_form_title">Tell us about your business</h3>
+              <p data-i18n="contact_form_copy">Share your channels, goals, and main pain point. We will reply with the best next step.</p>
+            </div>
+
+            <form class="contact-form" action="https://formspree.io/f/xqekolgy" method="POST">
+              <label>
+                <span data-i18n="form_name">Name</span>
+                <input type="text" name="name" required data-i18n-placeholder="form_name_placeholder" placeholder="Your name" />
+              </label>
+              <label>
+                <span data-i18n="form_email">Email</span>
+                <input type="email" name="email" required data-i18n-placeholder="form_email_placeholder" placeholder="you@company.com" />
+              </label>
+              <label>
+                <span data-i18n="form_company">Company</span>
+                <input type="text" name="company" data-i18n-placeholder="form_company_placeholder" placeholder="Company name" />
+              </label>
+              <label>
+                <span data-i18n="form_message">Message</span>
+                <textarea name="message" rows="5" required data-i18n-placeholder="form_message_placeholder" placeholder="Tell us what channels you use and what you want to automate."></textarea>
+              </label>
+              <button class="btn btn-primary btn-block" type="submit" data-i18n="nav_contact">Contact Us</button>
+            </form>
+
+            <p class="contact-form-note" data-i18n="form_disclaimer">
+              By sending this form, you agree that we can use your details to reply to your inquiry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div class="footer-branding">
+        <a class="brand brand-footer" href="#top" aria-label="Assistio home">
+          <span class="brand-mark">
+            <img class="brand-logo" src="./logo.png" width="52" height="66" alt="Assistio logo" loading="lazy" />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Assistio</span>
+            <span class="brand-tag" data-i18n="footer_tag">Customer conversation automation that drives more bookings.</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#product" data-i18n="nav_product">Product</a>
+        <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+        <a href="#how-it-works" data-i18n="nav_how">How It Works</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="#contact" data-i18n="nav_contact">Contact Us</a>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year></span> Assistio. All rights reserved.</p>
+      <p data-i18n="footer_copy">Book a Demo to see the right setup for your business.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky-cta">
+    <a class="btn btn-primary btn-block" href="https://calendar.app.google/YdZuLu8dWCTAMgx18" data-open-booking data-i18n="cta_book_demo">
+      Book a Demo
+    </a>
+  </div>
+
+  <div class="booking-modal" data-booking-modal hidden>
+    <div class="booking-modal-backdrop" data-close-booking></div>
+    <div class="booking-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+      <button class="booking-modal-close" type="button" aria-label="Close booking modal" data-close-booking>
+        <span></span>
+        <span></span>
+      </button>
+
+      <span class="eyebrow eyebrow-inline" data-i18n="cta_book_demo">Book a Demo</span>
+      <h2 id="booking-modal-title" data-i18n="booking_title">See the best Assistio setup for your business.</h2>
+      <p data-i18n="booking_copy">
+        No commitment required. It takes 30 seconds to book, and we will show you the fastest path to launch after approval.
+      </p>
+
+      <div class="booking-points">
+        <span data-i18n="trust_1">No commitment required</span>
+        <span data-i18n="trust_2">Takes 30 seconds to book</span>
+        <span data-i18n="trust_3">Fast setup after approval</span>
+      </div>
+
+      <a
+        class="btn btn-primary btn-block"
+        href="https://calendar.app.google/YdZuLu8dWCTAMgx18"
+        target="_blank"
+        rel="noopener"
+        data-booking-link
+        data-i18n="booking_continue"
+      >
+        Continue to Booking
+      </a>
+    </div>
+  </div>
+</body>
+</html>
