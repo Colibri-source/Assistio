@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light" data-theme-mode="system">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service | Assistio AI</title>
+  <meta name="description" content="Terms of Service for Assistio AI." />
+  <meta name="theme-color" content="#f3f7fc" />
+  <link rel="icon" href="./favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      var doc = document.documentElement;
+      try {
+        var storedTheme =
+          localStorage.getItem("assistio_theme_mode") ||
+          localStorage.getItem("assistio_theme");
+        var storedLang = localStorage.getItem("assistio_lang");
+        var systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var themeMode =
+          storedTheme === "light" || storedTheme === "dark" || storedTheme === "system"
+            ? storedTheme
+            : "system";
+        var resolvedTheme = themeMode === "system" ? (systemPrefersDark ? "dark" : "light") : themeMode;
+        var lang = storedLang === "ro" || storedLang === "ar" ? storedLang : "en";
+
+        doc.setAttribute("data-theme-mode", themeMode);
+        doc.setAttribute("data-theme", resolvedTheme);
+        doc.style.colorScheme = resolvedTheme;
+        doc.lang = lang;
+        doc.dir = lang === "ar" ? "rtl" : "ltr";
+      } catch (error) {
+        doc.setAttribute("data-theme-mode", "system");
+        doc.setAttribute("data-theme", "light");
+        doc.style.colorScheme = "light";
+        doc.lang = "en";
+        doc.dir = "ltr";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=24" />
+  <script src="./site-config.js?v=1"></script>
+  <script defer src="./scripts.js?v=18"></script>
+</head>
+<body data-page="legal">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container">
+      <div class="header-shell">
+        <a class="brand" href="./index.html#top" aria-label="Assistio home">
+          <span class="brand-mark">
+            <img
+              class="brand-logo"
+              src="./favicon-192.png"
+              width="52"
+              height="52"
+              alt="Assistio logo"
+              decoding="async"
+            />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Assistio</span>
+            <span class="brand-tag" data-i18n="brand_tag">AI automation for lead capture and booking</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            data-nav-toggle
+          >
+            <span class="sr-only">Open menu</span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-menu" id="nav-menu" data-nav-menu>
+            <div class="nav-links">
+              <a class="nav-link" href="./index.html#product" data-i18n="nav_product">Product</a>
+              <a class="nav-link" href="./index.html#pricing" data-i18n="nav_pricing">Pricing</a>
+              <a class="nav-link" href="./index.html#how-it-works" data-i18n="nav_how">How It Works</a>
+              <a class="nav-link" href="./index.html#contact" data-i18n="nav_contact">Contact Us</a>
+            </div>
+
+            <div class="nav-mobile-meta">
+              <div class="lang-switch mobile-lang-switch" aria-label="Language">
+                <button class="lang-button" type="button" data-lang="en">EN</button>
+                <button class="lang-button" type="button" data-lang="ro">RO</button>
+                <button class="lang-button" type="button" data-lang="ar">AR</button>
+              </div>
+            </div>
+
+            <div class="nav-mobile-actions">
+              <a
+                class="btn btn-secondary btn-block"
+                href="mailto:meshal.almoqdad@assistio.co?subject=Assistio%20Contact%20Request"
+                data-i18n="nav_contact"
+              >
+                Contact Us
+              </a>
+              <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" data-open-booking data-i18n="cta_book_demo">
+                Book a Demo
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch desktop-lang-switch" aria-label="Language">
+            <button class="lang-button" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="ro">RO</button>
+            <button class="lang-button" type="button" data-lang="ar">AR</button>
+          </div>
+
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Toggle color theme"
+            aria-pressed="false"
+          >
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.25"></circle>
+              <path d="M12 2.25v2.75"></path>
+              <path d="M12 19v2.75"></path>
+              <path d="M4.76 4.76l1.95 1.95"></path>
+              <path d="M17.29 17.29l1.95 1.95"></path>
+              <path d="M2.25 12H5"></path>
+              <path d="M19 12h2.75"></path>
+              <path d="M4.76 19.24l1.95-1.95"></path>
+              <path d="M17.29 6.71l1.95-1.95"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.25 14.19A8.72 8.72 0 0 1 9.81 3.75a8.98 8.98 0 1 0 10.44 10.44Z"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="5" width="16" height="11" rx="2.5"></rect>
+              <path d="M9 19h6"></path>
+              <path d="M12 16v3"></path>
+              <path d="M16.5 8.25h.01"></path>
+              <path d="M14.8 9.95a2.8 2.8 0 1 1 0-3.9"></path>
+            </svg>
+          </button>
+          <a class="btn btn-secondary header-contact" href="./index.html#contact" data-i18n="nav_contact">Contact Us</a>
+          <a class="btn btn-primary header-cta" href="https://calendar.app.google/mF4N138gHQZpTKqc6" data-open-booking data-i18n="cta_book_demo">
+            Book a Demo
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-overlay" data-nav-overlay hidden></div>
+  </header>
+
+  <main class="legal-main" id="main">
+    <section class="legal-hero">
+      <div class="container legal-shell">
+        <article class="legal-card" data-reveal>
+          <span class="eyebrow eyebrow-inline" data-i18n="legal_terms_eyebrow">Terms</span>
+          <h1 class="legal-title" data-i18n="legal_terms_title">Terms of Service</h1>
+          <p class="legal-lead" data-i18n="legal_terms_effective">Effective date: March 28, 2026</p>
+          <p data-i18n="legal_terms_intro">
+            These terms describe the basic commercial and operational rules for using Assistio services. By moving forward with Assistio, you agree to the terms below.
+          </p>
+
+          <h2 data-i18n="legal_terms_h2_1">1. Services</h2>
+          <p data-i18n="legal_terms_p1">
+            Assistio provides paid setup, configuration, support, and refinement for approved customer communication and intake workflows across the channels included in your selected plan or agreed scope.
+          </p>
+
+          <h2 data-i18n="legal_terms_h2_2">2. Client responsibilities</h2>
+          <p data-i18n="legal_terms_p2">
+            You are responsible for providing accurate business information, maintaining lawful access to connected channels, protecting credentials, and using the service in compliance with applicable laws and platform rules.
+          </p>
+
+          <h2 data-i18n="legal_terms_h2_3">3. Scope and approvals</h2>
+          <p data-i18n="legal_terms_p3">
+            Setup begins after scope, pricing, and required access are confirmed. Any work outside the agreed scope may require a revised quote, updated timeline, or additional approval.
+          </p>
+
+          <h2 data-i18n="legal_terms_h2_4">4. Fees and billing</h2>
+          <p data-i18n="legal_terms_p4">
+            Setup fees and recurring charges follow the selected plan or written agreement. Ongoing service begins according to the launch timing agreed during onboarding.
+          </p>
+
+          <h2 data-i18n="legal_terms_h2_5">5. Availability and changes</h2>
+          <p data-i18n="legal_terms_p5">
+            Assistio is delivered on a best-effort basis and may change over time to improve service quality, security, or performance. We may update these terms when needed, and continued use means you accept those updates.
+          </p>
+
+          <h2 data-i18n="legal_terms_h2_6">6. Contact</h2>
+          <p>
+            <span data-i18n="legal_terms_contact_intro">For questions about these terms, contact</span>
+            <a href="mailto:mishal.almoqdad@gmail.com?subject=Assistio%20Terms">mishal.almoqdad@gmail.com</a>.
+          </p>
+        </article>
+
+        <aside class="legal-side-card" data-reveal>
+          <span class="eyebrow eyebrow-inline" data-i18n="cta_book_demo">Book a Demo</span>
+          <h3 data-i18n="legal_terms_side_title">Get a clear next-step plan before you buy.</h3>
+          <p data-i18n="legal_terms_side_copy">
+            We keep scope, pricing, and launch expectations easy to understand so booking feels low-risk and straightforward.
+          </p>
+          <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" data-open-booking data-i18n="cta_book_demo">
+            Book a Demo
+          </a>
+          <a class="btn btn-secondary btn-block" href="./index.html#contact" data-i18n="legal_get_started">
+            Get Started
+          </a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div class="footer-branding">
+        <a class="brand brand-footer" href="./index.html#top" aria-label="Assistio home">
+          <span class="brand-mark">
+            <img
+              class="brand-logo"
+              src="./favicon-192.png"
+              width="48"
+              height="48"
+              alt="Assistio logo"
+              loading="lazy"
+              decoding="async"
+            />
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Assistio</span>
+            <span class="brand-tag" data-i18n="footer_tag">Customer conversation automation that drives more bookings.</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="./index.html#product" data-i18n="nav_product">Product</a>
+        <a href="./index.html#pricing" data-i18n="nav_pricing">Pricing</a>
+        <a href="./index.html#how-it-works" data-i18n="nav_how">How It Works</a>
+        <a href="./privacy.html" data-i18n="footer_privacy">Privacy</a>
+        <a href="./terms.html" data-i18n="footer_terms">Terms</a>
+        <a href="./index.html#contact" data-i18n="nav_contact">Contact Us</a>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year></span> Assistio. All rights reserved.</p>
+      <p data-i18n="footer_copy">Book a Demo to see the right setup for your business.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky-cta">
+    <a class="btn btn-primary btn-block" href="https://calendar.app.google/mF4N138gHQZpTKqc6" data-open-booking data-i18n="cta_book_demo">
+      Book a Demo
+    </a>
+  </div>
+
+  <button class="support-launcher" type="button" data-chat-launcher data-chat-fallback="./index.html#contact" hidden>
+    <span class="support-launcher-mark" aria-hidden="true">
+      <img src="./favicon-192.png" width="28" height="28" alt="" decoding="async" />
+    </span>
+    <span class="support-launcher-copy">
+      <strong data-i18n="support_launcher_title">Support AI</strong>
+      <span data-i18n="support_launcher_subtitle">Ask Assistio</span>
+    </span>
+  </button>
+
+  <div class="booking-modal" data-booking-modal hidden>
+    <div class="booking-modal-backdrop" data-close-booking></div>
+    <div class="booking-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+      <button class="booking-modal-close" type="button" aria-label="Close booking modal" data-close-booking>
+        <span></span>
+        <span></span>
+      </button>
+
+      <span class="eyebrow eyebrow-inline" data-i18n="cta_book_demo">Book a Demo</span>
+      <h2 id="booking-modal-title" data-i18n="booking_title">See the best Assistio setup for your business.</h2>
+      <p data-i18n="booking_copy">
+        No commitment required. It takes 30 seconds to book, and we will show you the fastest path to launch after approval.
+      </p>
+
+      <div class="booking-points">
+        <span data-i18n="trust_1">No commitment required</span>
+        <span data-i18n="trust_2">Takes 30 seconds to book</span>
+        <span data-i18n="trust_3">Fast setup after approval</span>
+      </div>
+
+      <a
+        class="btn btn-primary btn-block"
+        href="https://calendar.app.google/mF4N138gHQZpTKqc6"
+        target="_blank"
+        rel="noopener"
+        data-booking-link
+        data-i18n="booking_continue"
+      >
+        Continue to Booking
+      </a>
+    </div>
+  </div>
+</body>
+</html>
